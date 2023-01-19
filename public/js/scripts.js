@@ -19,7 +19,11 @@ function initTheside() {
         //   Background image ------------------
         var a = $(".bg");
         a.each(function(a) {
-            if ($(this).attr("data-bg")) $(this).css("background-image", "url(" + $(this).data("bg") + ")");
+            if ($(this).attr("data-bg")) $(this).css(
+							"background-image",
+							"url(" + $(this).data("bg") + ")",
+							// "linear-gradient("+rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)+")"
+						);
         });
         //   clone ------------------
         $.fn.duplicate = function(a, b) {
@@ -489,8 +493,10 @@ function initTheside() {
             autoReturn: true
         });
         $(".tabs-menu a").on("click", function(a) {
-            var tcitem = $(".tc_item"),
+            // var tcitem = $(".tc_item"),
+            var tcitem = $(".tab-name"),
                 tbamDat = $(this).data("tabnum");
+                // tabName = $('.tab-nam');
             TweenMax.to(tcitem, 0.4, {
                 force3D: true,
                 y: -20,
@@ -502,6 +508,7 @@ function initTheside() {
                         y: 50
                     });
                     tcitem.html(tbamDat);
+                    // tabName.html(tabName);
                 }
             });
             TweenMax.to(tcitem, 0.4, {
@@ -597,11 +604,18 @@ function initTheside() {
 					document.getElementById("message").innerHTML = a;
 					$("#message").slideDown("slow");
 					$("#submit").removeAttr("disabled");
+                    $("#contactform").hide()
 					if (null != a.match("success")) $("#contactform").slideDown("slow");
-				});
+				}).fail(function(e) {
+					$("#submit").removeAttr("disabled");
+                    console.log(e.statusText)
+					document.getElementById("message").innerHTML = e.statusText;
+                    $("#message").slideDown("fast");
+            // alert(e);
+          });;
 			});
 			return false;
-		});
+		})
 		$("#contactform input, #contactform textarea").keyup(function () {
 			$("#message").slideUp(1500);
 		});
@@ -907,6 +921,12 @@ function initTheside() {
                 i = 10 * h;
             $one.css(browserPrefix + "transform", "rotate3d(" + f + ", " + g + ", 0, " + i + "deg)");
         });
+
+        $(".custom-form").submit(function() {
+            // get all the inputs into an array.
+            var values = $(this).serialize()
+            console.log(values, 'form values')
+        })    
     }
     //   Parallax ------------------
 function initparallax() {

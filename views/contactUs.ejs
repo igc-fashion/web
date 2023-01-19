@@ -13,55 +13,28 @@
                     </div>
                     <div id="contact-form">
                         <div class="pr-bg pr-bg-white"></div>
-                        <div id="message"></div>
-                        <form class="custom-form" action="php/contact.php" name="contactform" id="contactform">
-                            <fieldset>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" id="name" placeholder="Your Name *" value="" />
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" name="email" id="email" placeholder="Email Address *"
-                                            value="" />
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" name="phone" id="phone" placeholder="Phone *" value="" />
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" name="location" id="location" placeholder="Location *"
-                                            value="" />
-                                    </div>
-                                    <div class="col-md-12">
-                                        <select name="I'm interested in" id="I'm interested in"
-                                            data-placeholder="I'm interested in" class="chosen-select sel-dec">
-                                            <option>I'm interested in</option>
-                                            <option value="Structural Engineering">Supporting the cause </option>
-                                            <option value="Geo-technical engineering">Marketing IGC Brand</option>
-                                            <option value="Design and Build">Joining the team </option>
-                                            <option value="Engineering, Procurement and Construction">supplier of
-                                                fabrics</option>
-                                            <option value="Project Managment">Sales of Products</option>
-                                            <option value="Roads and bridges">Community outreach</option>
-                                            <option value="Water Supply"></option>
-                                            <option value="Oil and Gas Services"></option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <textarea name="comments" id="comments" cols="40" rows="3"
-                                    placeholder="Description:"></textarea>
-                                <div class="verify-wrap">
-                                </div>
-                                <div class="clearfix"></div>
-                                <button class="btn float-btn flat-btn color-bg" id="submit">Submit <a
-                                        href=mailto:info@igcfashion.co></a> <i
-                                        class="fal fa-long-arrow-right"></i></button>
-                            </fieldset>
+                        <div id="message"> Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</div>
+                        <form class="custom-form needs-validation" action="/contacts" name="contactform" id="contactform">
+                            <div class="col-md-6">
+                                <input type="text" name="name" id="name" placeholder="Your Name *" class="form-control" required/>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="email" id="email" placeholder="Email Address *" class="form-control"
+                                    required />
+                            </div>
+                            <!-- <div class="row"> -->
+
+                                <textarea name="comments" id="comments" cols="40" rows="1"
+                                placeholder="Description:" class="form-control" required></textarea>
+                            <!-- </div> -->
+                            <button class="btn float-btn flat-btn color-bg" id="submit">Submit <a
+                                href=mailto:info@igcfashion.co></a> <i
+                                class="fal fa-long-arrow-right"></i></button>
                         </form>
                     </div>
                     <!-- contact form  end-->
                     <div class="section-number right_sn">
-                        <div class="pr-bg pr-bg-white"></div>
+                        <div class="pr-bg pr-bg-white"> is do nt like you</div>
                         <span>0</span>2.
                     </div>
                 </div>
@@ -74,72 +47,3 @@
     <div class="limit-box fl-wrap"></div>
 </div>
 <!--content end -->
-<div class="height-emulator fl-wrap"></div>
-<footer class="main-footer fixed-footer">
-    <div class="pr-bg"></div>
-    <div class="container">
-        <div class="fl-wrap footer-inner">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-logo">
-                        <img src="images/igc-fashion-logo.png" alt="">
-                    </div>
-                    <div class="footer_text  footer-box fl-wrap">
-                        <p>IGC is a fashion and costume label from kampala uganda inspired by African heritage, nature
-                            and culture always paired with a forward thinking and a unique design aesthetic.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-header fl-wrap"><span>01.</span> Contacts</div>
-                    <!-- footer-contacts-->
-                    <div class="footer-contacts footer-box fl-wrap">
-                        <ul>
-                            <li><span>Call:</span><a href="tel: +(256)770693987">+(256)750889338
-
-                                </a></li>
-                            <li><span>Write :</span><a href="mailto: info@igcfashion.co"> info@igcfashion.co</a></li>
-                            <li><span>Find us : </span><a href="https://goo.gl/maps/Ku9ogvBxwpLqPCJTA"> Kisaasi,
-                                    Kampala, Uganda </a></li>
-                        </ul>
-                    </div>
-                    <!-- footer contacts end -->
-                    <a href="mailto:info@igcfashion.co" class="fc_button">Get In Touch <i
-                            class="fal fa-envelope"></i></a>
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-header fl-wrap"><span>02.</span> Subscribe</div>
-                    <div class="footer-box fl-wrap">
-                        <p>Want to be notified with our recent and on-going projects. Just sign up and we'll send you a
-                            notification by email.</p>
-                        <div class="subcribe-form fl-wrap">
-                            <form id="subscribe" class="fl-wrap">
-                                <input class="enteremail" name="email" id="subscribe-email" placeholder="Your Email"
-                                    spellcheck="false" type="text">
-                                <button type="submit" id="subscribe-button" class="subscribe-button"> Send <i
-                                        class="fal fa-long-arrow-right"></i></button>
-                                <label for="subscribe-email" class="subscribe-message"></label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="subfooter fl-wrap">
-            <!-- policy-box-->
-            <div class="policy-box">
-                <span>&#169; IGC FASHION 2021 / All rights reserved. </span>
-            </div>
-            <!-- policy-box end-->
-            <a href="#" class="to-top-btn to-top">Back to top <i class="fal fa-long-arrow-up"></i></a>
-        </div>
-    </div>
-    <div class="footer-canvas">
-        <div class="dots gallery__dots" data-dots=""></div>
-    </div>
-</footer>
-<!-- footer  end -->
-<!-- share-wrapper-->
-<div class="share-wrapper">
-    <div class="close-share-btn"><i class="fal fa-long-arrow-left"></i> Close</div>
-    <div class="share-container fl-wrap  isShare"></div>
-</div>
