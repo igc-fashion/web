@@ -71,4 +71,21 @@ router.get("/about", function (req, res, next) {
 	res.render("index", { title: "Express", PageContent: "aboutUs" });
 });
 
+router.get("/fashioncyphers", function (req, res, next) {
+	res.render("index", { title: "Events", PageContent: "fashionCypher" });
+});
+
+router.get("/kwetukwanza", function (req, res, next) {
+	res.render("index", { title: "Events", PageContent: "kwetukwanza" });
+});
+
+router.get("/workshop", function (req, res, next) {
+	res.render("index", { title: "Events", PageContent: "workshop" });
+});
+
+router.get("/mistakenfabrics", function (req, res, next) {
+	res.render("index", { title: "Events", PageContent: "mistakenfabrics" });
+});
+
+
 module.exports = router;

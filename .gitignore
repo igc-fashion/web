@@ -61,7 +61,7 @@ typings/
 .next
 
 public/pics
-public/images
+# public/images
 
 public/*.mp4
 views/prodjson

@@ -5617,7 +5617,7 @@ jQuery.extend(jQuery.easing, {
 											o +
 											"-" +
 											e +
-											"'></a>"
+											"'></a>",
 									).appendTo(i);
 							}),
 								t("#" + m + ".share-" + o).css("margin", h),
@@ -5640,7 +5640,7 @@ jQuery.extend(jQuery.easing, {
 										e.open(
 											t(this).attr("href"),
 											"t",
-											"toolbar=0,resizable=1,status=0,width=640,height=528"
+											"toolbar=0,resizable=1,status=0,width=640,height=528",
 										),
 										!1
 									);
@@ -5652,7 +5652,9 @@ jQuery.extend(jQuery.easing, {
 			n = {
 				networkDefs: {
 					facebook: { url: "http://www.facebook.com/share.php?u=|u|" },
-					twitter: { url: "https://twitter.com/share?via=in1.com&text=|140|" },
+					twitter: {
+						url: "https://twitter.com/intent/tweet?url=https://igcfashion.co",
+					},
 					linkedin: {
 						url: "http://www.linkedin.com/shareArticle?mini=true&url=|u|&title=|t|&summary=|d|&source=in1.com",
 					},
