@@ -45,7 +45,11 @@ router.post("/contacts", async function ({ body, query }, res, next) {
 		} else {
 			console.log("Email sent: " + info.response);
 			// do something useful
-		res.status(200).send("sucess full sent so much");
+		res
+			.status(200)
+			.send(
+				"Our team will come back to you within a matter of hours to help you.",
+			);
 
 		}
 	});
