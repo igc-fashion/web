@@ -13,11 +13,11 @@ const nodemailer = require("nodemailer");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-	res.render("index", { title: "Express", PageContent: "home" });
+	res.render("index", { title: "IGC FASHION", PageContent: "home" });
 });
 
 router.get("/contacts", function (req, res, next) {
-	res.render("index", { title: "Express", PageContent: "contactUs" });
+	res.render("index", { title: "Contact Us", PageContent: "contactUs" });
 });
 
 router.post("/contacts", async function ({ body, query }, res, next) {
@@ -56,15 +56,15 @@ router.post("/contacts", async function ({ body, query }, res, next) {
 });
 
 router.get("/collections", function (req, res, next) {
-	res.render("index", { title: "Express", PageContent: "collections" });
+	res.render("index", { title: "Collections", PageContent: "collections" });
 });
 
 router.get("/projects", function (req, res, next) {
-	res.render("index", { title: "Express", PageContent: "projects" });
+	res.render("index", { title: "Projects", PageContent: "projects" });
 });
 
 router.get("/memberships", function (req, res, next) {
-	res.render("index", { title: "Express", PageContent: "membership" });
+	res.render("index", { title: "Memberships", PageContent: "membership" });
 });
 
 router.get("/events", function (req, res, next) {
@@ -72,23 +72,23 @@ router.get("/events", function (req, res, next) {
 });
 
 router.get("/about", function (req, res, next) {
-	res.render("index", { title: "Express", PageContent: "aboutUs" });
+	res.render("index", { title: "About Us", PageContent: "aboutUs" });
 });
 
 router.get("/fashioncyphers", function (req, res, next) {
-	res.render("index", { title: "Events", PageContent: "fashionCypher" });
+	res.render("index", { title: "Cyphers", PageContent: "fashionCypher" });
 });
 
 router.get("/kwetukwanza", function (req, res, next) {
-	res.render("index", { title: "Events", PageContent: "kwetukwanza" });
+	res.render("index", { title: "Kwanza", PageContent: "kwetukwanza" });
 });
 
 router.get("/workshop", function (req, res, next) {
-	res.render("index", { title: "Events", PageContent: "workshop" });
+	res.render("index", { title: "Workshops", PageContent: "workshop" });
 });
 
 router.get("/mistakenfabrics", function (req, res, next) {
-	res.render("index", { title: "Events", PageContent: "mistakenfabrics" });
+	res.render("index", { title: "collections", PageContent: "mistakenfabrics" });
 });
 
 
