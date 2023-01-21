@@ -5673,6 +5673,9 @@ jQuery.extend(jQuery.easing, {
 						url: "http://www.stumbleupon.com/submit?url=|u|&title=|t|",
 					},
 					email: { url: "mailto:?subject=|t|" },
+					whatsapp: {
+						url: "https://api.whatsapp.com/send?text=https://igcfashion.co",
+					},
 				},
 			};
 		return r[i]
