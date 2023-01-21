@@ -5685,7 +5685,7 @@ jQuery.extend(jQuery.easing, {
 			: r.init.apply(this, arguments);
 	}),
 		(t.fn.share.defaults = {
-			networks: ["in1", "facebook", "twitter", "linkedin"],
+			networks: ["in1", "facebook", "twitter", "linkedin", "whatsapp"],
 			theme: "icon",
 			autoShow: !0,
 			margin: "3px",
