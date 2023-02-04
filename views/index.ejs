@@ -19,6 +19,8 @@
   <link type="text/css" rel="stylesheet" href="css/style.css" />
   <link type="text/css" rel="stylesheet" href="css/color.css" />
   <link href="/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
   <!-- <link rel="stylesheet" rel="stylesheet" href="css/fontawesome.min.css" /> -->
   <!-- <link
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
@@ -63,7 +65,7 @@
             <a href="tel:+(256) 759899438"> +256759899438</a>
           </li>
           <li>
-            <a href="contacts"><span> Write </span>To Us</a>
+            <a href="contacts"><span> Contact</span> Us</a>
           </li>
         </ul>
       </div>
@@ -78,26 +80,23 @@
       <div class="left-panel_social"></div>
     </div>
     <!-- left-panel end -->
-    <!-- share-button -->
-        <div class="share-button showshare">
-          <span>Share</span>
-        </div>
-  <div class="share-wrapper">
-    <div class="close-share-btn"><i class="fal fa-long-arrow-left"></i> Close</div>
-    <div class="share-container fl-wrap  isShare"></div>
-  </div>
+    <!-- share-button --> 
+    <div class="share-button showshare">
+      <span>Share</span>
+    </div>
+    <div class="share-wrapper">
+      <div class="close-share-btn"><i class="fal fa-long-arrow-left"></i> Close</div>
+      <div class="share-container fl-wrap  isShare"></div>
+    </div>
     <!-- share-button end -->
     <!-- wrapper  -->
     <div id="wrapper">
       <!-- content-holder  -->
-      <div class="content-holder" data-pagetitle="CULTURE.TRIBAL. SUSTAINABILITY.COMMUNITY">
+      <div class="content-holder dark-bg" data-pagetitle="CULTURE.TRIBAL. SUSTAINABILITY.COMMUNITY">
         <!-- nav-holder-->
         <div class="nav-holder but-hol">
           <div class="nav-scroll-bar-wrap fl-wrap">
-            <!-- <div class="nav-search">
-                <form action="#" class="searh-inner fl-wrap"></form>
-              </div> -->
-            <!-- nav -->
+
             <nav class="nav-inner" id="menu">
               <ul>
                 <li>
@@ -109,10 +108,37 @@
                 <li>
                   <a href="http://shop.igcfashion.co" target="_blank" class="act-link">Shop</a>
                 </li>
-                <li></li>
-                <li><a href="collections" class="act-link">Collections</a></li>
-                <li></li>
+
+
+                <!-- <li></li> -->
+                <li class="showCollections"><a href="#" class="act-link">Collections</a></li>
                 <li><a href="contacts" class="act-link">Contact Us</a></li>
+                <li><a href="memberships" class="act-link">Membership</a></li>
+                <!-- collections -->
+                <div class="collections-wrapper" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                  <div class="close-share-btn" style="opacity: 1; top: 0px; transform: translate3d(0px, 0px, 0px); width: 200px; color: #f76905;">Collections <i class="fal fa-times"></i></div>
+                  <div class="collections-container fl-wrap isShare">
+                    <a
+                      href="/collections"
+                      class="pop share-icon"
+                      style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Metallic_Fabrics</a>
+                      <a
+                      href="/collections2"
+                      class="pop share-icon"
+                      style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Munsiko</a><a
+                      href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Flocalhost%3A3000%2F%23&amp;media=&amp;description="
+                      class="pop share-icon"
+                      style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">pin</a><a
+                      href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=http%3A%2F%2Flocalhost%3A3000%2F%23"
+                      class="pop share-icon"
+                      style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">gg</a><a
+                      href="https://twitter.com/intent/tweet?url=https://igcfashion.co"
+                      class="pop share-icon"
+                      style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">tw</a><a
+                      href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A3000%2F%23&amp;title=IGC FASHION&amp;summary=&amp;source=in1.com"
+                      class="pop share-icon"
+                      style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></a></div>
+                </div>
               </ul>
             </nav>
             <!-- nav end-->
@@ -120,6 +146,7 @@
 
             <!--lang-links end-->
           </div>
+
           <!--nav-social-->
           <div class="nav-social">
             <span class="nav-social_title">Follow us : </span>
@@ -138,8 +165,9 @@
           </div>
           <!--nav-social end -->
         </div>
+
         <div class="nav-overlay">
-          <div class="element"></div>
+          <div class="element"> i am sec</div>
         </div>
         <!-- nav-holder end -->
         <!--Content -->
@@ -150,7 +178,8 @@
 
           <!-- content  end -->
           <!-- share-wrapper-->
-           
+          
+
 
           <!-- share-wrapper  end -->
       </div>
@@ -164,6 +193,9 @@
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="js/core.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/scripts2.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
 </body>
 
 </html>

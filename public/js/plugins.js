@@ -45,8 +45,8 @@
 			);
 		})(
 			"autocomplete autofocus list placeholder max min multiple pattern required step".split(
-				" "
-			)
+				" ",
+			),
 		)),
 			(e.inputtypes = (function (a) {
 				for (var d = 0, e, f, h, i = a.length; d < i; d++)
@@ -72,8 +72,8 @@
 				return t;
 			})(
 				"search tel url email datetime date month week time datetime-local number range color".split(
-					" "
-				)
+					" ",
+				),
 			));
 	}
 	var d = "2.7.1",
@@ -140,7 +140,7 @@
 							(a.getComputedStyle ? getComputedStyle(b, null) : b.currentStyle)[
 								"position"
 							] == "absolute";
-					}
+					},
 				),
 				d
 			);
@@ -230,7 +230,7 @@
 							].join(""),
 							function (a) {
 								c = a.offsetTop === 9;
-							}
+							},
 					  ),
 				c
 			);
@@ -309,8 +309,8 @@
 				D(
 					(a + "-webkit- ".split(" ").join(b + a) + n.join(c + a)).slice(
 						0,
-						-a.length
-					)
+						-a.length,
+					),
 				),
 				G(j.backgroundImage, "gradient")
 			);
@@ -330,7 +330,7 @@
 						"@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",
 						function (b, c) {
 							a = b.offsetLeft === 9 && b.offsetHeight === 3;
-						}
+						},
 					),
 				a
 			);
@@ -352,7 +352,7 @@
 									: f.cssText || ""
 								: "";
 						a = /src/i.test(g) && g.indexOf(d.split(" ")[0]) === 0;
-					}
+					},
 				),
 				a
 			);
@@ -372,7 +372,7 @@
 					].join(""),
 					function (b) {
 						a = b.offsetHeight >= 3;
-					}
+					},
 				),
 				a
 			);
@@ -541,7 +541,7 @@
 										b.createElem(a), b.frag.createElement(a), 'c("' + a + '")'
 									);
 								}) +
-							");return n}"
+							");return n}",
 					)(s, b.frag));
 			}
 			function r(a) {
@@ -553,7 +553,7 @@
 						!c.hasCSS &&
 						(c.hasCSS = !!l(
 							a,
-							"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}"
+							"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}",
 						)),
 					k || q(a, c),
 					a
@@ -763,7 +763,7 @@
 										: c,
 									i.noexec,
 									i.attrs,
-									i.timeout
+									i.timeout,
 							  ),
 							  (d(e) || d(j)) &&
 									f.load(function () {
@@ -843,7 +843,7 @@
 						b.removeEventListener("DOMContentLoaded", A, 0),
 							(b.readyState = "complete");
 					}),
-					0
+					0,
 				)),
 			(a.yepnope = k()),
 			(a.yepnope.executeStack = h),
@@ -1255,7 +1255,7 @@ jQuery.extend(jQuery.easing, {
 				a("body").append('<div class="lg-backdrop"></div>'),
 					a(".lg-backdrop").css(
 						"transition-duration",
-						this.s.backdropDuration + "ms"
+						this.s.backdropDuration + "ms",
 					),
 					f = 0;
 				f < this.$items.length;
@@ -1323,7 +1323,7 @@ jQuery.extend(jQuery.easing, {
 					this.$outer
 						.find(".lg-toolbar")
 						.append(
-							'<a id="lg-download" target="_blank" download class="lg-download lg-icon"></a>'
+							'<a id="lg-download" target="_blank" download class="lg-download lg-icon"></a>',
 						),
 				(this.prevScrollTop = a(b).scrollTop());
 		}),
@@ -1363,12 +1363,12 @@ jQuery.extend(jQuery.easing, {
 			)
 				return { html5: !0 };
 			var d = a.match(
-					/\/\/(?:www\.)?youtu(?:\.be|be\.com)\/(?:watch\?v=|embed\/)?([a-z0-9\-\_\%]+)/i
+					/\/\/(?:www\.)?youtu(?:\.be|be\.com)\/(?:watch\?v=|embed\/)?([a-z0-9\-\_\%]+)/i,
 				),
 				e = a.match(/\/\/(?:www\.)?vimeo.com\/([0-9a-z\-_]+)/i),
 				f = a.match(/\/\/(?:www\.)?dai.ly\/([0-9a-z\-_]+)/i),
 				g = a.match(
-					/\/\/(?:www\.)?(?:vk\.com|vkontakte\.ru)\/(?:video_ext\.php\?)(.*)/i
+					/\/\/(?:www\.)?(?:vk\.com|vkontakte\.ru)\/(?:video_ext\.php\?)(.*)/i,
 				);
 			return d
 				? { youtube: d }
@@ -1387,7 +1387,7 @@ jQuery.extend(jQuery.easing, {
 						(parseInt(this.index, 10) + 1) +
 						'</span> / <span id="lg-counter-all">' +
 						this.$items.length +
-						"</span></div>"
+						"</span></div>",
 				);
 		}),
 		(e.prototype.addHtml = function (b) {
@@ -1499,7 +1499,7 @@ jQuery.extend(jQuery.easing, {
 								l.s.iframeMaxWidth +
 								'"><div class="lg-video"><iframe class="lg-object" frameborder="0" src="' +
 								g +
-								'"  allowfullscreen="true"></iframe></div></div>'
+								'"  allowfullscreen="true"></iframe></div></div>',
 						);
 				else if (m) {
 					var s = "";
@@ -1516,14 +1516,14 @@ jQuery.extend(jQuery.easing, {
 									s +
 									' "><div class="lg-video"><span class="lg-video-play"></span><img class="lg-object lg-has-poster" src="' +
 									h +
-									'" /></div></div>'
+									'" /></div></div>',
 							);
 				} else
 					r
 						? (l.$slide
 								.eq(c)
 								.prepend(
-									'<div class="lg-video-cont "><div class="lg-video"></div></div>'
+									'<div class="lg-video-cont "><div class="lg-video"></div></div>',
 								),
 						  l.$el.trigger("hasVideo.lg", [c, g, k]))
 						: l.$slide
@@ -1531,7 +1531,7 @@ jQuery.extend(jQuery.easing, {
 								.prepend(
 									'<div class="lg-img-wrap"><img class="lg-object lg-image" src="' +
 										g +
-										'" /></div>'
+										'" /></div>',
 								);
 				if (
 					(l.$el.trigger("onAferAppendSlide.lg", [c]),
@@ -1744,12 +1744,12 @@ jQuery.extend(jQuery.easing, {
 				this.setTranslate(
 					a(".lg-prev-slide"),
 					-this.$slide.eq(this.index).width() + d,
-					0
+					0,
 				),
 				this.setTranslate(
 					a(".lg-next-slide"),
 					this.$slide.eq(this.index).width() + d,
-					0
+					0,
 				));
 		}),
 		(e.prototype.touchEnd = function (a) {
@@ -2002,7 +2002,7 @@ jQuery.extend(jQuery.easing, {
 									.parent()
 									.css(
 										"transform",
-										"translate3d(-" + i + "px, -" + j + "px, 0)"
+										"translate3d(-" + i + "px, -" + j + "px, 0)",
 									)
 									.attr("data-x", i)
 									.attr("data-y", j);
@@ -2053,7 +2053,7 @@ jQuery.extend(jQuery.easing, {
 						(b.pageX = a(window).width() / 2),
 							(b.pageY = a(window).height() / 2 + a(window).scrollTop()),
 							e(d);
-					}
+					},
 				),
 				a("#lg-zoom-out").on("click.lg", function () {
 					b.core.$outer.find(".lg-current .lg-image").length &&
@@ -2068,7 +2068,7 @@ jQuery.extend(jQuery.easing, {
 						a,
 						b.core.$slide.eq(b.core.index).find(".lg-image"),
 						b.core.index,
-						!0
+						!0,
 					);
 				}),
 				b.core.$el.on("onBeforeSlide.lg.tm", function () {
@@ -2133,7 +2133,7 @@ jQuery.extend(jQuery.easing, {
 										? h.css({ left: i + "px", top: j + "px" })
 										: h.css(
 												"transform",
-												"translate3d(" + i + "px, " + j + "px, 0)"
+												"translate3d(" + i + "px, " + j + "px, 0)",
 										  ));
 						}
 					}),
@@ -2189,7 +2189,7 @@ jQuery.extend(jQuery.easing, {
 									? i.css({ left: j + "px", top: k + "px" })
 									: i.css(
 											"transform",
-											"translate3d(" + j + "px, " + k + "px, 0)"
+											"translate3d(" + j + "px, " + k + "px, 0)",
 									  );
 						}
 					}),
@@ -2214,13 +2214,13 @@ jQuery.extend(jQuery.easing, {
 					k = Math.abs(
 						g.prop("offsetHeight") * Math.abs(g.attr("data-scale")) -
 							e.core.$outer.find(".lg").height() +
-							j
+							j,
 					),
 					l = (e.core.$outer.find(".lg").width() - g.prop("offsetWidth")) / 2,
 					m = Math.abs(
 						g.prop("offsetWidth") * Math.abs(g.attr("data-scale")) -
 							e.core.$outer.find(".lg").width() +
-							l
+							l,
 					);
 				(Math.abs(b.x - a.x) > 15 || Math.abs(b.y - a.y) > 15) &&
 					(d && (i <= -k ? (i = -k) : i >= -j && (i = -j)),
@@ -2281,7 +2281,7 @@ jQuery.extend(jQuery.easing, {
 							{},
 							function () {
 								o.videoLoaded || this.play();
-							}
+							},
 						);
 					} catch (s) {
 						console.error("Make sure you have included videojs");
@@ -2308,7 +2308,7 @@ jQuery.extend(jQuery.easing, {
 					if (i)
 						i.contentWindow.postMessage(
 							'{"event":"command","func":"playVideo","args":""}',
-							"*"
+							"*",
 						);
 					else if (l)
 						try {
@@ -2344,7 +2344,7 @@ jQuery.extend(jQuery.easing, {
 											{},
 											function () {
 												this.play();
-											}
+											},
 										);
 									} catch (a) {
 										console.error("Make sure you have included videojs");
@@ -2394,7 +2394,7 @@ jQuery.extend(jQuery.easing, {
 				if (s)
 					s.contentWindow.postMessage(
 						'{"event":"command","func":"pauseVideo","args":""}',
-						"*"
+						"*",
 					);
 				else if (r)
 					try {
@@ -2512,7 +2512,7 @@ jQuery.extend(jQuery.easing, {
 									b +
 									" prior to initialization; attempted to call '" +
 									e +
-									"'"
+									"'",
 							);
 					}
 					return this;
@@ -2796,7 +2796,7 @@ jQuery.extend(jQuery.easing, {
 										g(
 											"Style returned " +
 												c +
-												". Are you running this code in a hidden iframe on Firefox? See http://bit.ly/getsizebug1"
+												". Are you running this code in a hidden iframe on Firefox? See http://bit.ly/getsizebug1",
 										),
 									c
 								);
@@ -2905,7 +2905,7 @@ jQuery.extend(jQuery.easing, {
 			? define(
 					"get-size/get-size",
 					["get-style-property/get-style-property"],
-					f
+					f,
 			  )
 			: "object" == typeof exports
 			? (module.exports = f(require("desandro-get-style-property")))
@@ -3004,13 +3004,13 @@ jQuery.extend(jQuery.easing, {
 					["doc-ready/doc-ready", "matches-selector/matches-selector"],
 					function (c, d) {
 						return b(a, c, d);
-					}
+					},
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
 					a,
 					require("doc-ready"),
-					require("desandro-matches-selector")
+					require("desandro-matches-selector"),
 			  ))
 			: (a.fizzyUIUtils = b(a, a.docReady, a.matchesSelector));
 	})(window, function (a, b, c) {
@@ -3146,7 +3146,7 @@ jQuery.extend(jQuery.easing, {
 										l.nodeName.toLowerCase() +
 										(l.id ? "#" + l.id : "") +
 										": " +
-										n
+										n,
 								);
 							continue;
 						}
@@ -3172,7 +3172,7 @@ jQuery.extend(jQuery.easing, {
 					],
 					function (c, d, e, f) {
 						return b(a, c, d, e, f);
-					}
+					},
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
@@ -3180,7 +3180,7 @@ jQuery.extend(jQuery.easing, {
 					require("wolfy87-eventemitter"),
 					require("get-size"),
 					require("desandro-get-style-property"),
-					require("fizzy-ui-utils")
+					require("fizzy-ui-utils"),
 			  ))
 			: ((a.Outlayer = {}),
 			  (a.Outlayer.Item = b(
@@ -3188,7 +3188,7 @@ jQuery.extend(jQuery.easing, {
 					a.EventEmitter,
 					a.getSize,
 					a.getStyleProperty,
-					a.fizzyUIUtils
+					a.fizzyUIUtils,
 			  )));
 	})(window, function (a, b, c, d, e) {
 		"use strict";
@@ -3503,7 +3503,7 @@ jQuery.extend(jQuery.easing, {
 					],
 					function (c, d, e, f, g) {
 						return b(a, c, d, e, f, g);
-					}
+					},
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
@@ -3512,7 +3512,7 @@ jQuery.extend(jQuery.easing, {
 					require("wolfy87-eventemitter"),
 					require("get-size"),
 					require("fizzy-ui-utils"),
-					require("./item")
+					require("./item"),
 			  ))
 			: (a.Outlayer = b(
 					a,
@@ -3520,7 +3520,7 @@ jQuery.extend(jQuery.easing, {
 					a.EventEmitter,
 					a.getSize,
 					a.fizzyUIUtils,
-					a.Outlayer.Item
+					a.Outlayer.Item,
 			  ));
 	})(window, function (a, b, c, d, e, f) {
 		"use strict";
@@ -3530,7 +3530,7 @@ jQuery.extend(jQuery.easing, {
 				return void (
 					h &&
 					h.error(
-						"Bad element for " + this.constructor.namespace + ": " + (c || a)
+						"Bad element for " + this.constructor.namespace + ": " + (c || a),
 					)
 				);
 			(this.element = c),
@@ -3956,7 +3956,7 @@ jQuery.extend(jQuery.easing, {
 			? define(
 					"isotope/js/layout-mode",
 					["get-size/get-size", "outlayer/outlayer"],
-					b
+					b,
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(require("get-size"), require("outlayer")))
@@ -4051,13 +4051,13 @@ jQuery.extend(jQuery.easing, {
 			? define(
 					"masonry/masonry",
 					["outlayer/outlayer", "get-size/get-size", "fizzy-ui-utils/utils"],
-					b
+					b,
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
 					require("outlayer"),
 					require("get-size"),
-					require("fizzy-ui-utils")
+					require("fizzy-ui-utils"),
 			  ))
 			: (a.Masonry = b(a.Outlayer, a.getSize, a.fizzyUIUtils));
 	})(window, function (a, b, c) {
@@ -4161,12 +4161,12 @@ jQuery.extend(jQuery.easing, {
 			? define(
 					"isotope/js/layout-modes/masonry",
 					["../layout-mode", "masonry/masonry"],
-					b
+					b,
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
 					require("../layout-mode"),
-					require("masonry-layout")
+					require("masonry-layout"),
 			  ))
 			: b(a.Isotope.LayoutMode, a.Masonry);
 	})(window, function (a, b) {
@@ -4277,7 +4277,7 @@ jQuery.extend(jQuery.easing, {
 					],
 					function (c, d, e, f, g, h) {
 						return b(a, c, d, e, f, g, h);
-					}
+					},
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
@@ -4290,7 +4290,7 @@ jQuery.extend(jQuery.easing, {
 					require("./layout-mode"),
 					require("./layout-modes/masonry"),
 					require("./layout-modes/fit-rows"),
-					require("./layout-modes/vertical")
+					require("./layout-modes/vertical"),
 			  ))
 			: (a.Isotope = b(
 					a,
@@ -4299,7 +4299,7 @@ jQuery.extend(jQuery.easing, {
 					a.matchesSelector,
 					a.fizzyUIUtils,
 					a.Isotope.Item,
-					a.Isotope.LayoutMode
+					a.Isotope.LayoutMode,
 			  ));
 	})(window, function (a, b, c, d, e, f, g) {
 		function h(a, b) {
@@ -4813,13 +4813,13 @@ jQuery.extend(jQuery.easing, {
 					["eventEmitter/EventEmitter", "eventie/eventie"],
 					function (n, i) {
 						return t(e, n, i);
-					}
+					},
 			  )
 			: "object" == typeof exports
 			? (module.exports = t(
 					e,
 					require("wolfy87-eventemitter"),
-					require("eventie")
+					require("eventie"),
 			  ))
 			: (e.imagesLoaded = t(e, e.EventEmitter, e.eventie));
 	})(window, function (e, t, n) {
@@ -5187,13 +5187,13 @@ jQuery.extend(jQuery.easing, {
 						"outlayer/outlayer",
 						"./rect",
 					],
-					b
+					b,
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
 					require("desandro-get-style-property"),
 					require("outlayer"),
-					require("./rect")
+					require("./rect"),
 			  ))
 			: (a.Packery.Item = b(a.getStyleProperty, a.Outlayer, a.Packery.Rect));
 	})(window, function (a, b, c) {
@@ -5282,7 +5282,7 @@ jQuery.extend(jQuery.easing, {
 						"./packer",
 						"./item",
 					],
-					b
+					b,
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
@@ -5291,7 +5291,7 @@ jQuery.extend(jQuery.easing, {
 					require("outlayer"),
 					require("./rect"),
 					require("./packer"),
-					require("./item")
+					require("./item"),
 			  ))
 			: (a.Packery = b(
 					a.classie,
@@ -5299,7 +5299,7 @@ jQuery.extend(jQuery.easing, {
 					a.Outlayer,
 					a.Packery.Rect,
 					a.Packery.Packer,
-					a.Packery.Item
+					a.Packery.Item,
 			  ));
 	})(window, function (a, b, c, d, e, f) {
 		function g(a, b) {
@@ -5523,13 +5523,13 @@ jQuery.extend(jQuery.easing, {
 		"function" == typeof define && define.amd
 			? define(
 					["isotope/js/layout-mode", "packery/js/packery", "get-size/get-size"],
-					b
+					b,
 			  )
 			: "object" == typeof exports
 			? (module.exports = b(
 					require("isotope-layout/js/layout-mode"),
 					require("packery"),
-					require("get-size")
+					require("get-size"),
 			  ))
 			: b(a.Isotope.LayoutMode, a.Packery, a.getSize);
 	})(window, function (a, b, c) {
@@ -5804,7 +5804,7 @@ jQuery.extend(jQuery.easing, {
 							t.ID +
 							'" >                                    <div id="' +
 							t.holderID +
-							'" class="ytplayer-player"></div>                                     </div>                                     <div id="ytplayer-shield"></div>'
+							'" class="ytplayer-player"></div>                                     </div>                                     <div id="ytplayer-shield"></div>',
 					);
 				t.$node.append(o), (t.$YTPlayerString = o), (o = null);
 			},
@@ -5815,7 +5815,7 @@ jQuery.extend(jQuery.easing, {
 							t.ID +
 							'" class="ytplayer-container background">                                    <div id="' +
 							t.holderID +
-							'" class="ytplayer-player"></div>                                    </div>                                    <div id="ytplayer-shield"></div>'
+							'" class="ytplayer-player"></div>                                    </div>                                    <div id="ytplayer-shield"></div>',
 					);
 				t.$node.append(o), (t.$YTPlayerString = o), (o = null);
 			},
@@ -5945,7 +5945,7 @@ jQuery.extend(jQuery.easing, {
 		la = /[-+]?\d+(\.\d+)?/g,
 		ma =
 			"translateX translateY rotate rotateX rotateY rotateZ skewX skewY scaleX scaleY".split(
-				" "
+				" ",
 			),
 		ba = e(window),
 		ca = e(document.body),
@@ -6308,8 +6308,8 @@ jQuery.extend(jQuery.easing, {
 				".scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };")
 		: w.appendChild(
 				document.createTextNode(
-					".scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };"
-				)
+					".scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };",
+				),
 		  );
 	v.appendChild(w);
 	return q;
@@ -6400,7 +6400,7 @@ jQuery.extend(jQuery.easing, {
 					return r;
 				};
 			}
-		}
+		},
 	);
 })(jQuery);
 
@@ -6791,7 +6791,7 @@ jQuery.extend(jQuery.easing, {
 					refreshInterval: $(this).data("refresh-interval"),
 					decimals: $(this).data("decimals"),
 				},
-				options
+				options,
 			);
 			var loops = Math.ceil(settings.speed / settings.refreshInterval),
 				increment = (settings.to - settings.from) / loops;
@@ -6874,7 +6874,7 @@ jQuery.extend(jQuery.easing, {
 							ddlist +
 							"</ul>" +
 							"</div>" +
-							"</span>"
+							"</span>",
 					);
 					select.before(selectbox).css({ position: "absolute", top: -9999 });
 					var divSelect = selectbox.find("div.select");
@@ -6902,15 +6902,15 @@ jQuery.extend(jQuery.easing, {
 							) {
 								dropdown.height(
 									Math.floor(
-										(topOffset - $(window).scrollTop() - 20) / liHeight
-									) * liHeight
+										(topOffset - $(window).scrollTop() - 20) / liHeight,
+									) * liHeight,
 								);
 							}
 						} else if (bottomOffset > liHeight * 6) {
 							dropdown.height("auto").css({ bottom: "auto", top: position });
 							if (dropdown.outerHeight() > bottomOffset - 20) {
 								dropdown.height(
-									Math.floor((bottomOffset - 20) / liHeight) * liHeight
+									Math.floor((bottomOffset - 20) / liHeight) * liHeight,
 								);
 							}
 						}
@@ -7052,7 +7052,77 @@ jQuery.extend(jQuery.easing, {
 					return;
 				}
 				if (href == "#") {
-					e.preventDefault();
+					// if e.targete.preventDefault();
+					// 			 $(".collections-container").share({
+					//     networks: ["whatsapp",'facebook', 'pinterest', 'googleplus', 'twitter','linkedin']
+					// });
+		// 			 $(".share-container").share({
+        //     networks: ["whatsapp",'facebook', 'pinterest', 'googleplus', 'twitter','linkedin']
+        // });
+        var shrcn = $(".collections-container"),
+            swra = $(".collections-wrapper"),
+            clsh = $(".close-share-btn"),
+            shic = $(".share-icon"),
+            ssbtn = $(".showCollections");
+
+        function showShare() {
+            ssbtn.addClass("uncl-share");
+            shrcn.removeClass("isShare");
+
+			// swra.css('width', "10px")
+			// swra.css('height', "400px")
+            TweenMax.to(swra, 0.6, {
+                force3D: false,
+                width: "180px",
+                // ease: Expo.easeInOut,
+                onComplete: function() {
+                    TweenMax.to(clsh, 0.4, {
+                        force3D: true,
+                        top: "0",
+                        opacity: "1"
+                    });
+                    shic.each(function(a) {
+                        var boi = $(this);
+                        setTimeout(function() {
+                            TweenMax.to(boi, 1.0, {
+                                force3D: false,
+                                opacity: "1"
+                            });
+                        }, 130 * a);
+                    });
+                }
+            });
+        }
+        function hideShare() {
+            ssbtn.removeClass("uncl-share");
+            shrcn.addClass("isShare");
+            TweenMax.to($(".share-icon"), 1.0, {
+                force3D: false,
+                opacity: "0"
+            });
+            TweenMax.to(clsh, 0.4, {
+                force3D: true,
+                top: "-60px",
+                opacity: "0",
+                onComplete: function() {
+                    TweenMax.to(swra, 0.6, {
+                        force3D: false,
+                        delay: 0.2,
+                        width: "0",
+                        ease: Expo.easeInOut
+                    });
+                }
+            });
+        }
+        clsh.on("click", function() {
+            hideShare();
+        });
+        ssbtn.on("click", function() {
+					console.log(e, "clicked me");
+            if ($(".collections-container").hasClass("isShare")) showShare();
+            // else hideShare();
+        });
+					// $(this).hide(1000)
 				} else if (href.indexOf("#menu-panel") == 0) {
 					var target = $(href),
 						isBack = $(this).hasClass("back"),
@@ -7165,7 +7235,7 @@ jQuery Plugin
 			var label = form.find("label[for=" + email.attr("id") + "]");
 			var settings = $.extend(
 				{ url: form.attr("action"), language: "en" },
-				options
+				options,
 			);
 			var url = settings.url.replace("/post?", "/post-json?").concat("&c=?");
 			form.attr("novalidate", "true");
@@ -7726,7 +7796,7 @@ var _gsScope =
 								this.duration() *
 									(this._yoyo && 0 !== (1 & this._cycle) ? 1 - a : a) +
 									this._cycle * (this._duration + this._repeatDelay),
-								b
+								b,
 						  )
 						: this._time / this.duration();
 				}),
@@ -7759,7 +7829,7 @@ var _gsScope =
 						? -1 === this._repeat
 							? this
 							: this.duration(
-									(a - this._repeat * this._repeatDelay) / (this._repeat + 1)
+									(a - this._repeat * this._repeatDelay) / (this._repeat + 1),
 							  )
 						: (this._dirty &&
 								((this._totalDuration =
@@ -7786,7 +7856,7 @@ var _gsScope =
 				f
 			);
 		},
-		!0
+		!0,
 	),
 		_gsScope._gsDefine(
 			"TimelineLite",
@@ -7976,7 +8046,7 @@ var _gsScope =
 								e.render(
 									(this.rawTime() - e._startTime) * e._timeScale,
 									!1,
-									!1
+									!1,
 								),
 							(this._gc || this._time === this._duration) &&
 								!this._paused &&
@@ -8079,7 +8149,7 @@ var _gsScope =
 								d && "number" == typeof b && null == this._labels[c]
 									? b - f
 									: 0,
-								d
+								d,
 							);
 						if (
 							((c = c || 0),
@@ -8103,7 +8173,7 @@ var _gsScope =
 					(q.seek = function (a, b) {
 						return this.totalTime(
 							"number" == typeof a ? a : this._parseTimeOrLabel(a),
-							b !== !1
+							b !== !1,
 						);
 					}),
 					(q.stop = function () {
@@ -8230,7 +8300,7 @@ var _gsScope =
 													(d._dirty ? d.totalDuration() : d._totalDuration) -
 														(a - d._startTime) * d._timeScale,
 													b,
-													c
+													c,
 											  )
 											: d.render((a - d._startTime) * d._timeScale, b, c)),
 										(d = g);
@@ -8253,7 +8323,7 @@ var _gsScope =
 																(a - l._startTime) * l._timeScale
 														: (a - l._startTime) * l._timeScale,
 													b,
-													c
+													c,
 												),
 													(l = l._prev);
 											(l = null), this.pause();
@@ -8263,7 +8333,7 @@ var _gsScope =
 													(d._dirty ? d.totalDuration() : d._totalDuration) -
 														(a - d._startTime) * d._timeScale,
 													b,
-													c
+													c,
 											  )
 											: d.render((a - d._startTime) * d._timeScale, b, c);
 									}
@@ -8437,7 +8507,7 @@ var _gsScope =
 					d
 				);
 			},
-			!0
+			!0,
 		),
 		_gsScope._gsDefine(
 			"TimelineMax",
@@ -8515,12 +8585,12 @@ var _gsScope =
 										d === f.duration() &&
 										f.duration(
 											Math.abs(f.vars.time - f.target.time()) /
-												f.target._timeScale
+												f.target._timeScale,
 										),
 									c.onStart &&
 										c.onStart.apply(
 											c.onStartScope || c.callbackScope || f,
-											c.onStartParams || []
+											c.onStartParams || [],
 										);
 							}),
 							f
@@ -8537,7 +8607,7 @@ var _gsScope =
 							(c.immediateRender = c.immediateRender !== !1);
 						var d = this.tweenTo(b, c);
 						return d.duration(
-							Math.abs(d.vars.time - a) / this._timeScale || 0.001
+							Math.abs(d.vars.time - a) / this._timeScale || 0.001,
 						);
 					}),
 					(k.render = function (a, b, c) {
@@ -8726,7 +8796,7 @@ var _gsScope =
 												(d._dirty ? d.totalDuration() : d._totalDuration) -
 													(a - d._startTime) * d._timeScale,
 												b,
-												c
+												c,
 										  )
 										: d.render((a - d._startTime) * d._timeScale, b, c)),
 									(d = i);
@@ -8745,7 +8815,7 @@ var _gsScope =
 															(a - m._startTime) * m._timeScale
 													: (a - m._startTime) * m._timeScale,
 												b,
-												c
+												c,
 											),
 												(m = m._prev);
 										(m = null), this.pause();
@@ -8755,7 +8825,7 @@ var _gsScope =
 												(d._dirty ? d.totalDuration() : d._totalDuration) -
 													(a - d._startTime) * d._timeScale,
 												b,
-												c
+												c,
 										  )
 										: d.render((a - d._startTime) * d._timeScale, b, c);
 								}
@@ -8821,7 +8891,7 @@ var _gsScope =
 									this.duration() *
 										(this._yoyo && 0 !== (1 & this._cycle) ? 1 - a : a) +
 										this._cycle * (this._duration + this._repeatDelay),
-									b
+									b,
 							  )
 							: this._time / this.duration() || 0;
 					}),
@@ -8879,7 +8949,7 @@ var _gsScope =
 					d
 				);
 			},
-			!0
+			!0,
 		),
 		(function () {
 			var a = 180 / Math.PI,
@@ -9201,7 +9271,7 @@ var _gsScope =
 											!1,
 											"thruBasic" === b.type,
 											b.correlate,
-											h
+											h,
 									  )
 									: m(i, b.type, j)),
 							(this._segCount = this._beziers[d].length),
@@ -9525,7 +9595,7 @@ var _gsScope =
 							"string" == typeof a
 								? a
 								: (a.currentStyle ? a.currentStyle.filter : a.style.filter) ||
-										""
+										"",
 						)
 							? parseFloat(RegExp.$1) / 100
 							: 1;
@@ -10182,7 +10252,7 @@ var _gsScope =
 									ia(u, x),
 									u.replace(t, ""),
 									G && -1 !== u.indexOf("px"),
-									!0
+									!0,
 								);
 							else if (e && pa.test(p))
 								(B = u.indexOf(")") + 1),
@@ -10205,7 +10275,7 @@ var _gsScope =
 															ia(u[0], p[0]),
 															",",
 															!1,
-															!0
+															!0,
 														)
 														.appendXtra("", p[1], ia(u[1], p[1]), "%,", !1)
 														.appendXtra(
@@ -10213,7 +10283,7 @@ var _gsScope =
 															p[2],
 															ia(u[2], p[2]),
 															y ? "%," : "%" + B,
-															!1
+															!1,
 														)
 												: h
 														.appendXtra(
@@ -10223,7 +10293,7 @@ var _gsScope =
 															u[0] - p[0],
 															",",
 															!0,
-															!0
+															!0,
 														)
 														.appendXtra("", p[1], u[1] - p[1], ",", !0)
 														.appendXtra("", p[2], u[2] - p[2], y ? "," : B, !0),
@@ -10234,7 +10304,7 @@ var _gsScope =
 													p,
 													(u.length < 4 ? 1 : u[3]) - p,
 													B,
-													!1
+													!1,
 												))),
 									(pa.lastIndex = 0);
 							else if ((v = p.match(s))) {
@@ -10248,7 +10318,7 @@ var _gsScope =
 											ia(w[n], A),
 											"",
 											G && "px" === p.substr(z + A.length, 2),
-											0 === n
+											0 === n,
 										),
 										(o = z + A.length);
 								h["xs" + h.l] += p.substr(o);
@@ -10295,7 +10365,7 @@ var _gsScope =
 													0,
 													g.n,
 													e,
-													g.pr
+													g.pr,
 												)),
 												(g.xfirst.xs0 = 0)),
 										  g)
@@ -10387,7 +10457,7 @@ var _gsScope =
 							this.format(_(a, this.p, e, !1, this.dflt)),
 							this.format(b),
 							f,
-							g
+							g,
 						);
 					}),
 					(g.registerSpecialProp = function (a, b, c) {
@@ -10403,7 +10473,7 @@ var _gsScope =
 				var Aa,
 					Ba =
 						"scaleX,scaleY,scaleZ,x,y,z,skewX,skewY,rotation,rotationX,rotationY,perspective,xPercent,yPercent".split(
-							","
+							",",
 						),
 					Ca = Z("transform"),
 					Da = X + "transform",
@@ -10474,7 +10544,7 @@ var _gsScope =
 													? a.getAttribute("x")
 													: a.hasAttribute("cx")
 													? a.getAttribute("cx")
-													: 0
+													: 0,
 											) || 0,
 										y:
 											parseFloat(
@@ -10482,7 +10552,7 @@ var _gsScope =
 													? a.getAttribute("y")
 													: a.hasAttribute("cy")
 													? a.getAttribute("cy")
-													: 0
+													: 0,
 											) || 0,
 										width: 0,
 										height: 0,
@@ -10529,7 +10599,7 @@ var _gsScope =
 								"svg",
 								(this.ownerSVGElement &&
 									this.ownerSVGElement.getAttribute("xmlns")) ||
-									"http://www.w3.org/2000/svg"
+									"http://www.w3.org/2000/svg",
 							),
 							d = this.parentNode,
 							e = this.nextSibling,
@@ -10656,7 +10726,7 @@ var _gsScope =
 									a,
 									_(a, Ea, c, !1, "50% 50%") + "",
 									m,
-									a.getAttribute("data-svg-origin")
+									a.getAttribute("data-svg-origin"),
 								),
 								(Aa = g.useSVGTransformAttr || Ka)),
 							(f = Qa(a)),
@@ -10884,11 +10954,11 @@ var _gsScope =
 										o = d.ieOffsetY || 0,
 										d.ieOffsetX = Math.round(
 											(q - ((0 > h ? -h : h) * q + (0 > i ? -i : i) * r)) / 2 +
-												u
+												u,
 										),
 										d.ieOffsetY = Math.round(
 											(r - ((0 > k ? -k : k) * r + (0 > j ? -j : j) * q)) / 2 +
-												v
+												v,
 										),
 										wa = 0;
 									4 > wa;
@@ -10910,7 +10980,7 @@ var _gsScope =
 												: o - d.ieOffsetY),
 										(l[z] =
 											(d[z] = Math.round(
-												c - A * (0 === wa || 2 === wa ? 1 : B)
+												c - A * (0 === wa || 2 === wa ? 1 : B),
 											)) + "px");
 							}
 						}
@@ -11261,7 +11331,7 @@ var _gsScope =
 													E,
 													A.svgOrigin,
 													A.smoothOrigin,
-													!0
+													!0,
 												),
 												(s = E.xOrigin),
 												(t = E.yOrigin),
@@ -11282,11 +11352,11 @@ var _gsScope =
 										((l = {
 											scaleX: ja(
 												null != A.scaleX ? A.scaleX : A.scale,
-												D.scaleX
+												D.scaleX,
 											),
 											scaleY: ja(
 												null != A.scaleY ? A.scaleY : A.scale,
-												D.scaleY
+												D.scaleY,
 											),
 											scaleZ: ja(A.scaleZ, D.scaleZ),
 											x: ja(A.x, D.x),
@@ -11317,7 +11387,7 @@ var _gsScope =
 												: D.rotation,
 											D.rotation,
 											"rotation",
-											B
+											B,
 										)),
 										Fa &&
 											((l.rotationX = ka(
@@ -11328,7 +11398,7 @@ var _gsScope =
 													: D.rotationX || 0,
 												D.rotationX,
 												"rotationX",
-												B
+												B,
 											)),
 											(l.rotationY = ka(
 												"rotationY" in A
@@ -11338,7 +11408,7 @@ var _gsScope =
 													: D.rotationY || 0,
 												D.rotationY,
 												"rotationY",
-												B
+												B,
 											))),
 										(l.skewX = ka(A.skewX, D.skewX)),
 										(l.skewY = ka(A.skewY, D.skewY));
@@ -11382,7 +11452,7 @@ var _gsScope =
 											(w ? D : l).xOrigin,
 											l.xOrigin,
 											f,
-											C
+											C,
 										)),
 										(f = ua(
 											D,
@@ -11390,7 +11460,7 @@ var _gsScope =
 											(w ? D : l).yOrigin,
 											l.yOrigin,
 											f,
-											C
+											C,
 										)),
 										(s !== D.xOffset || t !== D.yOffset) &&
 											((f = ua(
@@ -11399,7 +11469,7 @@ var _gsScope =
 												w ? s : D.xOffset,
 												D.xOffset,
 												f,
-												C
+												C,
 											)),
 											(f = ua(
 												D,
@@ -11407,7 +11477,7 @@ var _gsScope =
 												w ? t : D.yOffset,
 												D.yOffset,
 												f,
-												C
+												C,
 											))),
 										(E = "0px 0px")),
 									(E || (Fa && n && D.zOrigin)) &&
@@ -11443,7 +11513,7 @@ var _gsScope =
 								);
 							},
 							prefix: !0,
-						}
+						},
 					),
 					ya("boxShadow", {
 						defaultValue: "0px 0px 0px 0px #999",
@@ -11533,12 +11603,12 @@ var _gsScope =
 									this.format(b),
 									!1,
 									"0px",
-									f
+									f,
 								);
 							},
 							prefix: !0,
 							formatter: qa("0px 0px", !1, !0),
-						}
+						},
 					),
 					ya("backgroundPosition", {
 						defaultValue: "0 0",
@@ -11560,7 +11630,7 @@ var _gsScope =
 											: o.getPropertyValue(n)
 										: a.currentStyle.backgroundPositionX +
 										  " " +
-										  a.currentStyle.backgroundPositionY) || "0 0"
+										  a.currentStyle.backgroundPositionY) || "0 0",
 								),
 								r = this.format(b);
 							if (
@@ -11661,11 +11731,11 @@ var _gsScope =
 											" " +
 											_(a, "borderTopStyle", e, !1, "solid") +
 											" " +
-											_(a, "borderTopColor", e, !1, "#000")
+											_(a, "borderTopColor", e, !1, "#000"),
 									),
 									i.join(" "),
 									f,
-									g
+									g,
 								)
 							);
 						},
@@ -11683,7 +11753,7 @@ var _gsScope =
 					}),
 					ya("borderWidth", {
 						parser: ra(
-							"borderTopWidth,borderRightWidth,borderBottomWidth,borderLeftWidth"
+							"borderTopWidth,borderRightWidth,borderBottomWidth,borderLeftWidth",
 						),
 					}),
 					ya("float,cssFloat,styleFloat", {
@@ -11750,7 +11820,7 @@ var _gsScope =
 									!1,
 									0,
 									0 !== h ? "inherit" : "hidden",
-									0 === b ? "hidden" : "inherit"
+									0 === b ? "hidden" : "inherit",
 								)),
 								(f.xs0 = "inherit"),
 								d._overwriteProps.push(f.n),
@@ -11807,7 +11877,7 @@ var _gsScope =
 									? b
 									: o.replace(
 											new RegExp("(?:\\s|^)" + b.substr(2) + "(?![\\w-])"),
-											""
+											"",
 									  ) + ("+" === b.charAt(0) ? " " + b.substr(2) : "")),
 							a.setAttribute("class", g.e),
 							(j = da(a, k, ca(a), i, m)),
@@ -11919,7 +11989,7 @@ var _gsScope =
 											this,
 											null,
 											null,
-											b
+											b,
 										))
 								: (this._firstPT = p = this.parse(a, b, null)),
 							this._transformType)
@@ -11938,7 +12008,7 @@ var _gsScope =
 													A,
 													"WebkitBackfaceVisibility",
 													this._vars.WebkitBackfaceVisibility ||
-														(z ? "visible" : "hidden")
+														(z ? "visible" : "hidden"),
 												))
 										: (A.zoom = 1),
 									s = p;
@@ -11994,7 +12064,7 @@ var _gsScope =
 										n + "",
 										g,
 										!1,
-										g
+										g,
 									);
 									continue;
 								}
@@ -12062,7 +12132,7 @@ var _gsScope =
 															!1,
 															0,
 															m,
-															n
+															n,
 													  )),
 													  (c.xs0 =
 															"none" !== n ||
@@ -12081,7 +12151,7 @@ var _gsScope =
 														k !== !1 && ("px" === p || "zIndex" === g),
 														0,
 														m,
-														n
+														n,
 												  )),
 												  (c.xs0 = p)));
 							}
@@ -12293,7 +12363,7 @@ var _gsScope =
 					g
 				);
 			},
-			!0
+			!0,
 		),
 		(function () {
 			var a = _gsScope._gsDefine.plugin({
@@ -12366,7 +12436,7 @@ var _gsScope =
 								f + "",
 								e,
 								!1,
-								e
+								e,
 							),
 							this._overwriteProps.push(e);
 					return !0;
@@ -12401,7 +12471,7 @@ var _gsScope =
 										"function" != typeof a["get" + e.substr(3)]
 											? e
 											: "get" + e.substr(3)
-								  ]()
+								  ](),
 						)),
 						(h = this.finals[e] =
 							"string" == typeof f && "=" === f.charAt(1)
@@ -12453,7 +12523,7 @@ var _gsScope =
 						var f = i(
 							"easing." + a,
 							{ easeOut: new b(), easeIn: new c(), easeInOut: new d() },
-							!0
+							!0,
 						);
 						return k(f, a), f;
 					},
@@ -12473,7 +12543,7 @@ var _gsScope =
 									(this._p1 = a || 0 === a ? a : 1.70158),
 										(this._p2 = 1.525 * this._p1);
 								},
-								!0
+								!0,
 							),
 							e = (d.prototype = new a());
 						return (
@@ -12497,7 +12567,7 @@ var _gsScope =
 							return (a *= 2) < 1
 								? 0.5 * a * a * ((this._p2 + 1) * a - this._p2)
 								: 0.5 * ((a -= 2) * a * ((this._p2 + 1) * a + this._p2) + 2);
-						})
+						}),
 					),
 					p = i(
 						"easing.SlowMo",
@@ -12510,7 +12580,7 @@ var _gsScope =
 								(this._p3 = this._p1 + this._p2),
 								(this._calcEnd = c === !0);
 						},
-						!0
+						!0,
 					),
 					q = (p.prototype = new a());
 				return (
@@ -12544,7 +12614,7 @@ var _gsScope =
 								(this._p2 = a + (b ? 0 : 1)),
 								(this._p3 = b ? 1 : 0);
 						},
-						!0
+						!0,
 					)),
 					(q = b.prototype = new a()),
 					(q.constructor = b),
@@ -12611,7 +12681,7 @@ var _gsScope =
 								(g = j[n]), (h = new m(g.x, g.y, h));
 							this._prev = new m(0, 0, 0 !== h.t ? h : h.next);
 						},
-						!0
+						!0,
 					)),
 					(q = c.prototype = new a()),
 					(q.constructor = c),
@@ -12661,7 +12731,7 @@ var _gsScope =
 										: 7.5625 * (a -= 2.625 / 2.75) * a + 0.984375),
 								b ? 0.5 * (1 - a) : 0.5 * a + 0.5
 							);
-						})
+						}),
 					),
 					l(
 						"Circ",
@@ -12675,7 +12745,7 @@ var _gsScope =
 							return (a *= 2) < 1
 								? -0.5 * (Math.sqrt(1 - a * a) - 1)
 								: 0.5 * (Math.sqrt(1 - (a -= 2) * a) + 1);
-						})
+						}),
 					),
 					(d = function (b, c, d) {
 						var e = i(
@@ -12687,7 +12757,7 @@ var _gsScope =
 											(this._p2 / g) * (Math.asin(1 / this._p1) || 0)),
 										(this._p2 = g / this._p2);
 								},
-								!0
+								!0,
 							),
 							f = (e.prototype = new a());
 						return (
@@ -12711,7 +12781,7 @@ var _gsScope =
 									1
 								);
 							},
-							0.3
+							0.3,
 						),
 						d(
 							"ElasticIn",
@@ -12722,7 +12792,7 @@ var _gsScope =
 									Math.sin((a - this._p3) * this._p2)
 								);
 							},
-							0.3
+							0.3,
 						),
 						d(
 							"ElasticInOut",
@@ -12738,8 +12808,8 @@ var _gsScope =
 											0.5 +
 											1;
 							},
-							0.45
-						)
+							0.45,
+						),
 					),
 					l(
 						"Expo",
@@ -12753,7 +12823,7 @@ var _gsScope =
 							return (a *= 2) < 1
 								? 0.5 * Math.pow(2, 10 * (a - 1))
 								: 0.5 * (2 - Math.pow(2, -10 * (a - 1)));
-						})
+						}),
 					),
 					l(
 						"Sine",
@@ -12765,7 +12835,7 @@ var _gsScope =
 						}),
 						j("SineInOut", function (a) {
 							return -0.5 * (Math.cos(Math.PI * a) - 1);
-						})
+						}),
 					),
 					i(
 						"easing.EaseLookup",
@@ -12774,7 +12844,7 @@ var _gsScope =
 								return a.map[b];
 							},
 						},
-						!0
+						!0,
 					),
 					k(e.SlowMo, "SlowMo", "ease,"),
 					k(c, "RoughEase", "ease,"),
@@ -12782,7 +12852,7 @@ var _gsScope =
 					o
 				);
 			},
-			!0
+			!0,
 		);
 }),
 	_gsScope._gsDefine && _gsScope._gsQueue.pop()(),
@@ -12861,7 +12931,7 @@ var _gsScope =
 											[],
 											function () {
 												return o;
-											}
+											},
 										);
 							for (p = 0; p < this.sc.length; p++) this.sc[p].check();
 						}
@@ -12880,7 +12950,7 @@ var _gsScope =
 							function () {
 								return b;
 							},
-							c
+							c,
 						),
 						b
 					);
@@ -12895,7 +12965,7 @@ var _gsScope =
 							(this._power = d || 0),
 							(this._params = b ? u.concat(b) : u);
 					},
-					!0
+					!0,
 				),
 				w = (v.map = {}),
 				x = (v.register = function (a, b, c, d) {
@@ -12955,7 +13025,7 @@ var _gsScope =
 					x(
 						new v(null, null, 2, g),
 						h,
-						"easeIn" + (0 === g ? ",easeNone" : "")
+						"easeIn" + (0 === g ? ",easeNone" : ""),
 					),
 					x(new v(null, null, 3, g), h, "easeInOut");
 			(w.linear = l.easing.Linear.easeIn), (w.swing = l.easing.Quad.easeInOut);
@@ -13355,7 +13425,7 @@ var _gsScope =
 									this._timeline && !this._timeline.smoothChildTiming
 										? this.totalDuration() - this._totalTime
 										: this._totalTime,
-									!0
+									!0,
 								)),
 						  this)
 						: this._reversed;
@@ -13453,7 +13523,7 @@ var _gsScope =
 											(e._dirty ? e.totalDuration() : e._totalDuration) -
 												(a - e._startTime) * e._timeScale,
 											b,
-											c
+											c,
 									  )
 									: e.render((a - e._startTime) * e._timeScale, b, c)),
 							(e = d);
@@ -13528,7 +13598,7 @@ var _gsScope =
 								this.vars.immediateRender !== !1)) &&
 							((this._time = -m), this.render(Math.min(0, -this._delay)));
 					},
-					!0
+					!0,
 				),
 				H = function (b) {
 					return (
@@ -13700,7 +13770,7 @@ var _gsScope =
 										m,
 										n ? parseFloat(o.s) + o.c : d,
 										h || G.defaultStringFilter,
-										o
+										o,
 								  )),
 								  (o = {
 										t: j,
@@ -13978,7 +14048,7 @@ var _gsScope =
 							(this._propLookup[a] = {}),
 							this._siblings[a],
 							h ? h[a] : null,
-							a
+							a,
 						) && (b = !0);
 				else
 					b = this._initProps(
@@ -13986,7 +14056,7 @@ var _gsScope =
 						this._propLookup,
 						this._siblings,
 						h,
-						0
+						0,
 					);
 				if (
 					(b && G._onPluginEvent("_onInitAllProps", this),
@@ -14054,7 +14124,7 @@ var _gsScope =
 								0,
 								null,
 								this.vars.stringFilter,
-								f
+								f,
 							);
 					return e && this._kill(e, b)
 						? this._initProps(b, c, d, e, f)
@@ -14363,7 +14433,7 @@ var _gsScope =
 						(this._priority = b || 0),
 						(this._super = ca.prototype);
 				},
-				!0
+				!0,
 			);
 			if (
 				((h = ca.prototype),
@@ -14444,7 +14514,7 @@ var _gsScope =
 							function () {
 								ca.call(this, c, d), (this._overwriteProps = e || []);
 							},
-							a.global === !0
+							a.global === !0,
 						),
 						h = (g.prototype = new ca(c));
 					(h.constructor = g), (g.API = a.API);
@@ -14466,7 +14536,7 @@ var _gsScope =
 			"undefined" != typeof global
 			? global
 			: this || window,
-		"TweenMax"
+		"TweenMax",
 	);
 /**
 lava
@@ -14505,7 +14575,7 @@ lava
 				hoverStart: function () {},
 				hoverFinish: function () {},
 			},
-			a || {}
+			a || {},
 		);
 		"" == a.container && (a.container = a.target);
 		a.autoResize &&
@@ -14538,7 +14608,7 @@ lava
 						a.homeClass +
 						'"></' +
 						a.container +
-						">"
+						">",
 				).css({
 					left: a.homeLeft,
 					top: a.homeTop,
@@ -14585,7 +14655,7 @@ lava
 					a.container +
 					' class="backLava"><div class="leftLava"></div><div class="bottomLava"></div><div class="cornerLava"></div></' +
 					a.container +
-					">"
+					">",
 			)
 				.css({ position: "absolute", display: "block", margin: 0, padding: 0 })
 				.prependTo(this);
@@ -14635,7 +14705,7 @@ lava
 	};
 })(jQuery);
 /* jquery.nicescroll 3.6.0 InuYaksa*2014 MIT http://nicescroll.areaaperta.com */ (function (
-	f
+	f,
 ) {
 	"function" === typeof define && define.amd
 		? define(["jquery"], f)
@@ -14792,12 +14862,12 @@ lava
 			for (
 				var m =
 						"transition webkitTransition msTransition MozTransition OTransition OTransition KhtmlTransition".split(
-							" "
+							" ",
 						),
 					n = " -webkit- -ms- -moz- -o- -o -khtml-".split(" "),
 					p =
 						"transitionend webkitTransitionEnd msTransitionEnd transitionend otransitionend oTransitionEnd KhtmlTransitionEnd".split(
-							" "
+							" ",
 						),
 					h = 0;
 				h < m.length;
@@ -14890,7 +14960,7 @@ lava
 							: (c.deltaY = a.detail);
 						return q.call(b, c);
 					},
-					c
+					c,
 				);
 			}
 			function p(b, g, c) {
@@ -14922,7 +14992,7 @@ lava
 							a.lastdeltax = 0;
 							a.rail.drag || a.doScrollLeftBy(b);
 						},
-						15
+						15,
 					));
 				if (e) {
 					if (a.opt.nativeparentscrolling && c && !a.ispage && !a.zoomactive)
@@ -14938,7 +15008,7 @@ lava
 							a.lastdeltay = 0;
 							a.rail.drag || a.doScrollBy(b);
 						},
-						15
+						15,
 					);
 				}
 				b.stopImmediatePropagation();
@@ -14956,7 +15026,7 @@ lava
 			this.iddoc =
 				(this.doc = a.opt.doc) && this.doc[0] ? this.doc[0].id || "" : "";
 			this.ispage = /^BODY|HTML/.test(
-				a.opt.win ? a.opt.win[0].nodeName : this.doc[0].nodeName
+				a.opt.win ? a.opt.win[0].nodeName : this.doc[0].nodeName,
 			);
 			this.haswrapper = !1 !== a.opt.win;
 			this.win = a.opt.win || (this.ispage ? f(window) : this.doc);
@@ -15148,7 +15218,7 @@ lava
 									a.doc.translate.tx +
 									"," +
 									a.doc.translate.ty +
-									",0px)"
+									",0px)",
 							);
 							g || a.notifyScrollEvent(a.win[0]);
 					  }),
@@ -15161,7 +15231,7 @@ lava
 									a.doc.translate.tx +
 									"," +
 									a.doc.translate.ty +
-									",0px)"
+									",0px)",
 							);
 							g || a.notifyScrollEvent(a.win[0]);
 					  }))
@@ -15174,7 +15244,7 @@ lava
 									a.doc.translate.tx +
 									"," +
 									a.doc.translate.ty +
-									")"
+									")",
 							);
 							g || a.notifyScrollEvent(a.win[0]);
 					  }),
@@ -15187,7 +15257,7 @@ lava
 									a.doc.translate.tx +
 									"," +
 									a.doc.translate.ty +
-									")"
+									")",
 							);
 							g || a.notifyScrollEvent(a.win[0]);
 					  }));
@@ -15205,7 +15275,7 @@ lava
 					}),
 					(this.setScrollLeft = function (b) {
 						return a.docscroll.scrollLeft(
-							a.detected.ismozilla && a.isrtlmode ? -b : b
+							a.detected.ismozilla && a.isrtlmode ? -b : b,
 						);
 					});
 			this.getTarget = function (a) {
@@ -15458,7 +15528,7 @@ lava
 						l.addClass("nicescroll-rails nicescroll-rails-hr"),
 						(l.height = Math.max(
 							parseFloat(a.opt.cursorwidth),
-							g.outerHeight()
+							g.outerHeight(),
 						)),
 						l.css({
 							height: l.height + "px",
@@ -15574,12 +15644,12 @@ lava
 										: (a.scrollmom.stop(),
 										  a.scrollmom.update(
 												a.mangotouch.sx - e,
-												a.mangotouch.sy - g
+												a.mangotouch.sy - g,
 										  ),
 										  (a.mangotouch.tm = q),
 										  (g = Math.max(
 												Math.abs(a.mangotouch.ly - b),
-												Math.abs(a.mangotouch.lx - c)
+												Math.abs(a.mangotouch.lx - c),
 										  )),
 										  (a.mangotouch.ly = b),
 										  (a.mangotouch.lx = c),
@@ -15665,11 +15735,11 @@ lava
 											d = f(window).height(),
 											q = Math.max(
 												document.body.scrollWidth,
-												document.documentElement.scrollWidth
+												document.documentElement.scrollWidth,
 											),
 											h = Math.max(
 												document.body.scrollHeight,
-												document.documentElement.scrollHeight
+												document.documentElement.scrollHeight,
 											),
 											d = Math.max(0, h - d),
 											g = Math.max(0, q - g);
@@ -15891,15 +15961,15 @@ lava
 												? a.doScrollLeft(
 														a.scrollvaluemaxw -
 															Math.round(a.scroll.x * a.scrollratio.x),
-														a.opt.cursordragspeed
+														a.opt.cursordragspeed,
 												  )
 												: a.doScrollLeft(
 														Math.round(a.scroll.x * a.scrollratio.x),
-														a.opt.cursordragspeed
+														a.opt.cursordragspeed,
 												  )
 											: a.doScrollTop(
 													Math.round(a.scroll.y * a.scrollratio.y),
-													a.opt.cursordragspeed
+													a.opt.cursordragspeed,
 											  ));
 								});
 								return a.cancelEvent(b);
@@ -15945,7 +16015,7 @@ lava
 											function () {
 												p();
 											},
-											50
+											50,
 										));
 								}
 							};
@@ -15975,7 +16045,7 @@ lava
 										function () {
 											p(b);
 										},
-										250
+										250,
 									);
 							};
 						}
@@ -16057,7 +16127,7 @@ lava
 							? (a.bind(
 									e.hasmousecapture ? a.win : document,
 									"mouseup",
-									a.ontouchend
+									a.ontouchend,
 							  ),
 							  a.bind(document, "mousemove", a.ontouchmove),
 							  a.onclick && a.bind(document, "click", a.onclick),
@@ -16072,7 +16142,7 @@ lava
 							: (a.bind(
 									e.hasmousecapture ? a.win : document,
 									"mouseup",
-									a.onmouseup
+									a.onmouseup,
 							  ),
 							  a.bind(document, "mousemove", a.onmousemove),
 							  a.onclick && a.bind(document, "click", a.onclick),
@@ -16104,7 +16174,7 @@ lava
 								a.bind(
 									e.isie && a.ispage ? document : a.win,
 									"mousewheel",
-									a.onmousewheel
+									a.onmousewheel,
 								),
 							a.bind(a.rail, "mousewheel", a.onmousewheel),
 							a.railh && a.bind(a.railh, "mousewheel", a.onmousewheelhr));
@@ -16213,7 +16283,7 @@ lava
 						a.bind(
 							document,
 							e.isopera && !e.isopera12 ? "keypress" : "keydown",
-							a.onkeypress
+							a.onkeypress,
 						);
 					a.bind(document, "keydown", function (b) {
 						b.ctrlKey && (a.wheelprevented = !0);
@@ -16283,7 +16353,7 @@ lava
 							: (a.bind(
 									a.win,
 									e.isie && !e.isie9 ? "propertychange" : "DOMAttrModified",
-									a.onAttributeChange
+									a.onAttributeChange,
 							  ),
 							  e.isie9 &&
 									a.win[0].attachEvent("onpropertychange", a.onAttributeChange),
@@ -16323,11 +16393,11 @@ lava
 								return {
 									w: Math.max(
 										a.iframe.html.scrollWidth,
-										a.iframe.body.scrollWidth
+										a.iframe.body.scrollWidth,
 									),
 									h: Math.max(
 										a.iframe.html.scrollHeight,
-										a.iframe.body.scrollHeight
+										a.iframe.body.scrollHeight,
 									),
 								};
 							}),
@@ -16337,7 +16407,7 @@ lava
 							a.doc.height("");
 							var g = Math.max(
 								b.getElementsByTagName("html")[0].scrollHeight,
-								b.body.scrollHeight
+								b.body.scrollHeight,
 							);
 							a.doc.height(g);
 						}
@@ -16425,11 +16495,11 @@ lava
 						return {
 							w: Math.max(
 								document.body.scrollWidth,
-								document.documentElement.scrollWidth
+								document.documentElement.scrollWidth,
 							),
 							h: Math.max(
 								document.body.scrollHeight,
-								document.documentElement.scrollHeight
+								document.documentElement.scrollHeight,
 							),
 						};
 				  }
@@ -16516,14 +16586,14 @@ lava
 					(a.view.h -= 20);
 				a.cursorheight = Math.min(
 					a.view.h,
-					Math.round((a.view.h / a.page.h) * a.view.h)
+					Math.round((a.view.h / a.page.h) * a.view.h),
 				);
 				a.cursorheight = a.opt.cursorfixedheight
 					? a.opt.cursorfixedheight
 					: Math.max(a.opt.cursorminheight, a.cursorheight);
 				a.cursorwidth = Math.min(
 					a.view.w,
-					Math.round((a.view.w / a.page.w) * a.view.w)
+					Math.round((a.view.w / a.page.w) * a.view.w),
 				);
 				a.cursorwidth = a.opt.cursorfixedheight
 					? a.opt.cursorfixedheight
@@ -16549,10 +16619,10 @@ lava
 				a.getScrollTop() > a.page.maxh
 					? a.doScrollTop(a.page.maxh)
 					: ((a.scroll.y = Math.round(
-							a.getScrollTop() * (1 / a.scrollratio.y)
+							a.getScrollTop() * (1 / a.scrollratio.y),
 					  )),
 					  (a.scroll.x = Math.round(
-							a.getScrollLeft() * (1 / a.scrollratio.x)
+							a.getScrollLeft() * (1 / a.scrollratio.x),
 					  )),
 					  a.cursoractive && a.noticeCursor());
 				a.scroll.y &&
@@ -16604,7 +16674,7 @@ lava
 											(b.original = a),
 											d.call(this, b));
 								},
-								f || !1
+								f || !1,
 							),
 					  a._bind(h, c, d, f || !1),
 					  e.cantouch &&
@@ -16929,12 +16999,12 @@ lava
 												a.doc,
 												e.transitionend,
 												a.onScrollTransitionEnd,
-												!1
+												!1,
 										  ))
 										: (a.scrollendtrapped && clearTimeout(a.scrollendtrapped),
 										  (a.scrollendtrapped = setTimeout(
 												a.onScrollTransitionEnd,
-												h
+												h,
 										  ))),
 									(a.timerscroll = {
 										bz: new A(d, a.newscrolly, h, 0, 0, 0.58, 1),
@@ -17075,7 +17145,7 @@ lava
 							a.dst.px = h;
 							a.dst.py = f;
 							var k = Math.round(
-								Math.sqrt(Math.pow(a.dst.x, 2) + Math.pow(a.dst.y, 2))
+								Math.sqrt(Math.pow(a.dst.x, 2) + Math.pow(a.dst.y, 2)),
 							);
 							a.dst.ax = a.dst.x / k;
 							a.dst.ay = a.dst.y / k;
@@ -17189,7 +17259,7 @@ lava
 						a.scroll.y = Math.round(a.getScrollTop() * (1 / a.scrollratio.y));
 						a.railh &&
 							(a.scroll.x = Math.round(
-								a.getScrollLeft() * (1 / a.scrollratio.x)
+								a.getScrollLeft() * (1 / a.scrollratio.x),
 							));
 						a.noticeCursor();
 					});
@@ -17201,7 +17271,7 @@ lava
 					a.zoomrestore = { style: {} };
 					var c =
 							"position top left zIndex backgroundColor marginTop marginBottom marginLeft marginRight".split(
-								" "
+								" ",
 							),
 						d = a.win[0].style,
 						h;
@@ -17469,7 +17539,7 @@ lava
 					this[c].apply(this, f);
 				});
 			};
-		}
+		},
 	);
 	f.fn.getNiceScroll = function (k) {
 		return "undefined" == typeof k
@@ -17541,7 +17611,7 @@ lava
 							ddlist +
 							"</ul>" +
 							"</div>" +
-							"</span>"
+							"</span>",
 					);
 					select.before(selectbox).css({ position: "absolute", top: -9999 });
 					var divSelect = selectbox.find("div.select");
@@ -17569,15 +17639,15 @@ lava
 							) {
 								dropdown.height(
 									Math.floor(
-										(topOffset - $(window).scrollTop() - 20) / liHeight
-									) * liHeight
+										(topOffset - $(window).scrollTop() - 20) / liHeight,
+									) * liHeight,
 								);
 							}
 						} else if (bottomOffset > liHeight * 6) {
 							dropdown.height("auto").css({ bottom: "auto", top: position });
 							if (dropdown.outerHeight() > bottomOffset - 20) {
 								dropdown.height(
-									Math.floor((bottomOffset - 20) / liHeight) * liHeight
+									Math.floor((bottomOffset - 20) / liHeight) * liHeight,
 								);
 							}
 						}
@@ -17716,7 +17786,7 @@ lava
 			n.push(
 				encodeURIComponent(e ? o.toUpperCase() : o) +
 					"=" +
-					encodeURIComponent(t[o])
+					encodeURIComponent(t[o]),
 			);
 		return (i && -1 !== i.indexOf("?") ? "&" : "?") + n.join("&");
 	}
@@ -17754,7 +17824,7 @@ lava
 				t[i] === L.Mixin.Events &&
 					console.warn(
 						"Deprecated include of L.Mixin.Events: this property will be removed in future releases, please inherit from L.Evented instead.",
-						new Error().stack
+						new Error().stack,
 					);
 		}
 	}
@@ -18134,7 +18204,7 @@ lava
 					  t.addEventListener(
 							"mouseenter" === i ? "mouseover" : "mouseout",
 							r,
-							!1
+							!1,
 					  ))
 					: ("click" === i &&
 							zi &&
@@ -18159,7 +18229,7 @@ lava
 					? t.removeEventListener(
 							"onwheel" in t ? "wheel" : "mousewheel",
 							r,
-							!1
+							!1,
 					  )
 					: t.removeEventListener(
 							"mouseenter" === i
@@ -18168,7 +18238,7 @@ lava
 								? "mouseout"
 								: i,
 							r,
-							!1
+							!1,
 					  )
 				: "detachEvent" in t && t.detachEvent("on" + i, r)
 			: U(t, s),
@@ -18203,7 +18273,7 @@ lava
 			n = e.boundingClientRect;
 		return new x(
 			(t.clientX - n.left) / e.x - i.clientLeft,
-			(t.clientY - n.top) / e.y - i.clientTop
+			(t.clientY - n.top) / e.y - i.clientTop,
 		);
 	}
 	function Tt(t) {
@@ -18347,7 +18417,7 @@ lava
 	function Wt(t) {
 		return (
 			console.warn(
-				"Deprecated use of _flat, please use L.LineUtil.isFlat instead."
+				"Deprecated use of _flat, please use L.LineUtil.isFlat instead.",
 			),
 			jt(t)
 		);
@@ -18410,7 +18480,7 @@ lava
 							type: "Feature",
 							properties: t.properties,
 						},
-						i
+						i,
 					);
 					c && h.push(c);
 				}
@@ -18662,7 +18732,7 @@ lava
 				this._eventParents[e].fire(
 					t.type,
 					i({ layer: t.target, propagatedFrom: t.target }, t),
-					!0
+					!0,
 				);
 		},
 	};
@@ -18770,7 +18840,7 @@ lava
 				return new x(
 					(this.min.x + this.max.x) / 2,
 					(this.min.y + this.max.y) / 2,
-					t
+					t,
 				);
 			},
 			getBottomLeft: function () {
@@ -18858,7 +18928,7 @@ lava
 			getCenter: function () {
 				return new M(
 					(this._southWest.lat + this._northEast.lat) / 2,
-					(this._southWest.lng + this._northEast.lng) / 2
+					(this._southWest.lng + this._northEast.lng) / 2,
 				);
 			},
 			getSouthWest: function () {
@@ -18995,7 +19065,7 @@ lava
 					e = this.scale(t);
 				return new P(
 					this.transformation.transform(i.min, e),
-					this.transformation.transform(i.max, e)
+					this.transformation.transform(i.max, e),
 				);
 			},
 			infinite: !1,
@@ -19004,7 +19074,7 @@ lava
 				return new M(
 					this.wrapLat ? s(t.lat, this.wrapLat, !0) : t.lat,
 					i,
-					t.alt
+					t.alt,
 				);
 			},
 			wrapLatLngBounds: function (t) {
@@ -19042,14 +19112,14 @@ lava
 					o = Math.sin(n * i);
 				return new x(
 					this.R * t.lng * i,
-					(this.R * Math.log((1 + o) / (1 - o))) / 2
+					(this.R * Math.log((1 + o) / (1 - o))) / 2,
 				);
 			},
 			unproject: function (t) {
 				var i = 180 / Math.PI;
 				return new M(
 					(2 * Math.atan(Math.exp(t.y / this.R)) - Math.PI / 2) * i,
-					(t.x * i) / this.R
+					(t.x * i) / this.R,
 				);
 			},
 			bounds: (function () {
@@ -19434,7 +19504,7 @@ lava
 						[-90, -180],
 						[90, 180],
 					],
-					t
+					t,
 				);
 			},
 			panTo: function (t, i) {
@@ -19447,7 +19517,7 @@ lava
 					return (
 						this._resetView(
 							this.unproject(this.project(this.getCenter()).add(t)),
-							this.getZoom()
+							this.getZoom(),
 						),
 						this
 					);
@@ -19459,7 +19529,7 @@ lava
 								step: this._onPanTransitionStep,
 								end: this._onPanTransitionEnd,
 							},
-							this
+							this,
 						)),
 					i.noMoveStart || this.fire("movestart"),
 					!1 !== i.animate)
@@ -19470,7 +19540,7 @@ lava
 						this._mapPane,
 						e,
 						i.duration || 0.25,
-						i.easeLinearity
+						i.easeLinearity,
 					);
 				} else this._rawPanBy(t), this.fire("move").fire("moveend");
 				return this;
@@ -19509,7 +19579,7 @@ lava
 						  this._move(
 								this.unproject(c.add(_.subtract(c).multiplyBy(h(n) / v)), p),
 								this.getScaleZoom(m / a(n), p),
-								{ flyTo: !0 }
+								{ flyTo: !0 },
 						  ))
 						: this._move(t, i)._moveEnd(!0);
 				}
@@ -19593,7 +19663,7 @@ lava
 									? (clearTimeout(this._sizeTimer),
 									  (this._sizeTimer = setTimeout(
 											e(this.fire, this, "moveend"),
-											200
+											200,
 									  )))
 									: this.fire("moveend")),
 					  this.fire("resize", { oldSize: n, newSize: o }))
@@ -19625,7 +19695,7 @@ lava
 						? (this._locationWatchId = navigator.geolocation.watchPosition(
 								n,
 								o,
-								t
+								t,
 						  ))
 						: navigator.geolocation.getCurrentPosition(n, o, t),
 					this
@@ -19708,7 +19778,7 @@ lava
 					"div",
 					"leaflet-pane" +
 						(t ? " leaflet-" + t.replace("Pane", "") + "-pane" : ""),
-					i || this._mapPane
+					i || this._mapPane,
 				);
 				return t && (this._panes[t] = e), e;
 			},
@@ -19727,7 +19797,7 @@ lava
 				var t = this.getPixelBounds();
 				return new T(
 					this.unproject(t.getBottomLeft()),
-					this.unproject(t.getTopRight())
+					this.unproject(t.getTopRight()),
 				);
 			},
 			getMinZoom: function () {
@@ -19768,7 +19838,7 @@ lava
 					(this._size && !this._sizeChanged) ||
 						((this._size = new x(
 							this._container.clientWidth || 0,
-							this._container.clientHeight || 0
+							this._container.clientHeight || 0,
 						)),
 						(this._sizeChanged = !1)),
 					this._size.clone()
@@ -19783,7 +19853,7 @@ lava
 			},
 			getPixelWorldBounds: function (t) {
 				return this.options.crs.getProjectedBounds(
-					void 0 === t ? this.getZoom() : t
+					void 0 === t ? this.getZoom() : t,
 				);
 			},
 			getPane: function (t) {
@@ -19851,7 +19921,7 @@ lava
 			},
 			mouseEventToLayerPoint: function (t) {
 				return this.containerPointToLayerPoint(
-					this.mouseEventToContainerPoint(t)
+					this.mouseEventToContainerPoint(t),
 				);
 			},
 			mouseEventToLatLng: function (t) {
@@ -19874,7 +19944,7 @@ lava
 							(Yi ? " leaflet-retina" : "") +
 							(Li ? " leaflet-oldie" : "") +
 							(Ai ? " leaflet-safari" : "") +
-							(this._fadeAnimated ? " leaflet-fade-anim" : "")
+							(this._fadeAnimated ? " leaflet-fade-anim" : ""),
 					);
 				var i = q(t, "position");
 				"absolute" !== i &&
@@ -19949,7 +20019,7 @@ lava
 					this._container,
 					"click dblclick mousedown mouseup mouseover mouseout mousemove contextmenu keypress",
 					this._handleDOMEvent,
-					this
+					this,
 				),
 					this.options.trackResize && i(window, "resize", this._onResize, this),
 					ji &&
@@ -20032,7 +20102,7 @@ lava
 							? this.latLngToContainerPoint(s.getLatLng())
 							: this.mouseEventToContainerPoint(t)),
 							(r.layerPoint = this.containerPointToLayerPoint(
-								r.containerPoint
+								r.containerPoint,
 							)),
 							(r.latlng = a
 								? s.getLatLng()
@@ -20124,7 +20194,7 @@ lava
 			_getBoundsOffset: function (t, i, e) {
 				var n = b(
 						this.project(i.getNorthEast(), e),
-						this.project(i.getSouthWest(), e)
+						this.project(i.getSouthWest(), e),
 					),
 					o = n.min.subtract(t.min),
 					s = n.max.subtract(t.max);
@@ -20165,13 +20235,13 @@ lava
 							rt(
 								this._proxy,
 								this.project(t.center, t.zoom),
-								this.getZoomScale(t.zoom, 1)
+								this.getZoomScale(t.zoom, 1),
 							),
 								e === this._proxy.style[i] &&
 									this._animatingZoom &&
 									this._onZoomTransitionEnd();
 						},
-						this
+						this,
 					),
 					this.on(
 						"load moveend",
@@ -20180,7 +20250,7 @@ lava
 								i = this.getZoom();
 							rt(this._proxy, this.project(t, i), this.getZoomScale(i, 1));
 						},
-						this
+						this,
 					),
 					this._on("unload", this._destroyAnimProxy, this);
 			},
@@ -20305,7 +20375,7 @@ lava
 				n = (this._controlContainer = G(
 					"div",
 					e + "control-container",
-					this._container
+					this._container,
 				));
 			t("top", "left"),
 				t("top", "right"),
@@ -20398,7 +20468,7 @@ lava
 						mt(
 							i,
 							{ mouseenter: this.expand, mouseleave: this.collapse },
-							this
+							this,
 						));
 				var o = (this._layersLink = G("a", t + "-toggle", i));
 				(o.href = "#"),
@@ -20427,9 +20497,9 @@ lava
 									t.layer,
 									i.layer,
 									t.name,
-									i.name
+									i.name,
 								);
-							}, this)
+							}, this),
 						),
 					this.options.autoZIndex &&
 						t.setZIndex &&
@@ -20502,7 +20572,7 @@ lava
 					r.appendChild(i),
 					r.appendChild(s),
 					(t.overlay ? this._overlaysList : this._baseLayersList).appendChild(
-						e
+						e,
 					),
 					this._checkDisabledLayers(),
 					e
@@ -20569,14 +20639,14 @@ lava
 						n.zoomInTitle,
 						i + "-in",
 						e,
-						this._zoomIn
+						this._zoomIn,
 					)),
 					(this._zoomOutButton = this._createButton(
 						n.zoomOutText,
 						n.zoomOutTitle,
 						i + "-out",
 						e,
-						this._zoomOut
+						this._zoomOut,
 					)),
 					this._updateDisabled(),
 					t.on("zoomend zoomlevelschange", this._updateDisabled, this),
@@ -20654,7 +20724,7 @@ lava
 				t.off(
 					this.options.updateWhenIdle ? "moveend" : "move",
 					this._update,
-					this
+					this,
 				);
 			},
 			_addScales: function (t, i, e) {
@@ -20666,7 +20736,7 @@ lava
 					i = t.getSize().y / 2,
 					e = t.distance(
 						t.containerPointToLatLng([0, i]),
-						t.containerPointToLatLng([this.options.maxWidth, i])
+						t.containerPointToLatLng([this.options.maxWidth, i]),
 					);
 				this._updateScales(e);
 			},
@@ -20937,7 +21007,7 @@ lava
 			R_MINOR: 6356752.314245179,
 			bounds: new P(
 				[-20037508.34279, -15496570.73972],
-				[20037508.34279, 18764656.23138]
+				[20037508.34279, 18764656.23138],
 			),
 			project: function (t) {
 				var i = Math.PI / 180,
@@ -21052,7 +21122,7 @@ lava
 							function () {
 								i.off(e, this);
 							},
-							this
+							this,
 						);
 				}
 				this.onAdd(i),
@@ -21252,7 +21322,7 @@ lava
 					s = w(
 						("shadow" === i && e.shadowAnchor) ||
 							e.iconAnchor ||
-							(o && o.divideBy(2, !0))
+							(o && o.divideBy(2, !0)),
 					);
 				(t.className = "leaflet-marker-" + i + " " + (e.className || "")),
 					s &&
@@ -21314,7 +21384,7 @@ lava
 								drag: this._onDrag,
 								dragend: this._onDragEnd,
 							},
-							this
+							this,
 						)
 						.enable(),
 					Q(t, "leaflet-marker-draggable");
@@ -21328,7 +21398,7 @@ lava
 							drag: this._onDrag,
 							dragend: this._onDragEnd,
 						},
-						this
+						this,
 					)
 					.disable(),
 					this._marker._icon &&
@@ -21351,7 +21421,7 @@ lava
 						(Math.max(h.max.x, s.x) - h.max.x) / (r.max.x - h.max.x) -
 							(Math.min(h.min.x, s.x) - h.min.x) / (r.min.x - h.min.x),
 						(Math.max(h.max.y, s.y) - h.max.y) / (r.max.y - h.max.y) -
-							(Math.min(h.min.y, s.y) - h.min.y) / (r.min.y - h.min.y)
+							(Math.min(h.min.y, s.y) - h.min.y) / (r.min.y - h.min.y),
 					).multiplyBy(n);
 					e.panBy(u, { animate: !1 }),
 						this._draggable._newPos._add(u),
@@ -21680,7 +21750,7 @@ lava
 				var t = [this._radius, this._radiusY || this._radius];
 				return new T(
 					this._map.layerPointToLatLng(this._point.subtract(t)),
-					this._map.layerPointToLatLng(this._point.add(t))
+					this._map.layerPointToLatLng(this._point.add(t)),
 				);
 			},
 			setStyle: Qe.prototype.setStyle,
@@ -21699,7 +21769,7 @@ lava
 						l =
 							Math.acos(
 								(Math.cos(s * o) - Math.sin(i * o) * Math.sin(u * o)) /
-									(Math.cos(i * o) * Math.cos(u * o))
+									(Math.cos(i * o) * Math.cos(u * o)),
 							) / o;
 					(isNaN(l) || 0 === l) && (l = s / Math.cos((Math.PI / 180) * i)),
 						(this._point = h.subtract(e.getPixelOrigin())),
@@ -21707,7 +21777,7 @@ lava
 						(this._radiusY = h.y - r.y);
 				} else {
 					var c = n.unproject(
-						n.project(this._latlng).subtract([this._mRadius, 0])
+						n.project(this._latlng).subtract([this._mRadius, 0]),
 					);
 					(this._point = e.latLngToLayerPoint(this._latlng)),
 						(this._radius = this._point.x - e.latLngToLayerPoint(c).x);
@@ -22148,7 +22218,7 @@ lava
 					e = this._map._latLngBoundsToNewLayerBounds(
 						this._bounds,
 						t.zoom,
-						t.center
+						t.center,
 					).min;
 				rt(this._image, e, i);
 			},
@@ -22156,7 +22226,7 @@ lava
 				var t = this._image,
 					i = new P(
 						this._map.latLngToLayerPoint(this._bounds.getNorthWest()),
-						this._map.latLngToLayerPoint(this._bounds.getSouthEast())
+						this._map.latLngToLayerPoint(this._bounds.getSouthEast()),
 					),
 					e = i.getSize();
 				at(t, i.min),
@@ -22229,7 +22299,7 @@ lava
 					? (nt(this._container, 0),
 					  (this._removeTimeout = setTimeout(
 							e(K, void 0, this._container),
-							200
+							200,
 					  )))
 					: K(this._container);
 			},
@@ -22358,7 +22428,7 @@ lava
 				var t = "leaflet-popup",
 					i = (this._container = G(
 						"div",
-						t + " " + (this.options.className || "") + " leaflet-zoom-animated"
+						t + " " + (this.options.className || "") + " leaflet-zoom-animated",
 					)),
 					e = (this._wrapper = G("div", t + "-content-wrapper", i));
 				if (
@@ -22397,7 +22467,7 @@ lava
 				var i = this._map._latLngToNewLayerPoint(
 						this._latlng,
 						t.zoom,
-						t.center
+						t.center,
 					),
 					e = this._getAnchor();
 				at(this._container, i.add(e));
@@ -22436,7 +22506,7 @@ lava
 				return w(
 					this._source && this._source._getPopupAnchor
 						? this._source._getPopupAnchor()
-						: [0, 0]
+						: [0, 0],
 				);
 			},
 		});
@@ -22629,7 +22699,7 @@ lava
 			return w(
 				this._source && this._source._getTooltipAnchor && !this.options.sticky
 					? this._source._getTooltipAnchor()
-					: [0, 0]
+					: [0, 0],
 			);
 		},
 	});
@@ -22845,7 +22915,7 @@ lava
 							(this._onMove = o(
 								this._onMoveEnd,
 								this.options.updateInterval,
-								this
+								this,
 							)),
 						(t.move = this._onMove)),
 					this._zoomAnimated && (t.zoomanim = this._animateZoom),
@@ -22908,7 +22978,7 @@ lava
 				this._container ||
 					((this._container = G(
 						"div",
-						"leaflet-layer " + (this.options.className || "")
+						"leaflet-layer " + (this.options.className || ""),
 					)),
 					this._updateZIndex(),
 					this.options.opacity < 1 && this._updateOpacity(),
@@ -22933,7 +23003,7 @@ lava
 							(((n = this._levels[t] = {}).el = G(
 								"div",
 								"leaflet-tile-container leaflet-zoom-animated",
-								this._container
+								this._container,
 							)),
 							(n.el.style.zIndex = i),
 							(n.origin = o
@@ -23096,7 +23166,7 @@ lava
 							a = this.options.keepBuffer,
 							h = new P(
 								o.getBottomLeft().subtract([a, -a]),
-								o.getTopRight().add([a, -a])
+								o.getTopRight().add([a, -a]),
 							);
 						if (
 							!(
@@ -23231,7 +23301,7 @@ lava
 			_wrapCoords: function (t) {
 				var i = new x(
 					this._wrapX ? s(t.x, this._wrapX) : t.x,
-					this._wrapY ? s(t.y, this._wrapY) : t.y
+					this._wrapY ? s(t.y, this._wrapY) : t.y,
 				);
 				return (i.z = t.z), i;
 			},
@@ -23239,7 +23309,7 @@ lava
 				var i = this.getTileSize();
 				return new P(
 					t.min.unscaleBy(i).floor(),
-					t.max.unscaleBy(i).ceil().subtract([1, 1])
+					t.max.unscaleBy(i).ceil().subtract([1, 1]),
 				);
 			},
 			_noTilesToLoad: function () {
@@ -23475,7 +23545,7 @@ lava
 						t,
 						"click dblclick mousedown mouseup contextmenu",
 						this._onClick,
-						this
+						this,
 					),
 					mt(t, "mouseout", this._handleMouseOut, this),
 					(this._ctx = t.getContext("2d"));
@@ -23586,7 +23656,7 @@ lava
 						0,
 						0,
 						this._container.width,
-						this._container.height
+						this._container.height,
 					);
 			},
 			_draw: function () {
@@ -23743,7 +23813,7 @@ lava
 			} catch (t) {
 				return function (t) {
 					return document.createElement(
-						"<" + t + ' xmlns="urn:schemas-microsoft.com:vml" class="lvml">'
+						"<" + t + ' xmlns="urn:schemas-microsoft.com:vml" class="lvml">',
 					);
 				};
 			}
@@ -23810,7 +23880,7 @@ lava
 					t,
 					t._empty()
 						? "M0 0"
-						: "AL " + i.x + "," + i.y + " " + e + "," + n + " 0,23592600"
+						: "AL " + i.x + "," + i.y + " " + e + "," + n + " 0,23592600",
 				);
 			},
 			_setPath: function (t, i) {
@@ -24033,7 +24103,7 @@ lava
 						mouseup: this._onMouseUp,
 						keydown: this._onKeyDown,
 					},
-					this
+					this,
 				);
 		},
 		_onMouseMove: function (t) {
@@ -24061,7 +24131,7 @@ lava
 						mouseup: this._onMouseUp,
 						keydown: this._onKeyDown,
 					},
-					this
+					this,
 				);
 		},
 		_onMouseUp: function (t) {
@@ -24070,7 +24140,7 @@ lava
 					(this._resetStateTimeout = setTimeout(e(this._resetState, this), 0));
 				var i = new T(
 					this._map.containerPointToLatLng(this._startPoint),
-					this._map.containerPointToLatLng(this._point)
+					this._map.containerPointToLatLng(this._point),
 				);
 				this._map.fitBounds(i).fire("boxzoomend", { boxZoomBounds: i });
 			}
@@ -24119,7 +24189,7 @@ lava
 							drag: this._onDrag,
 							dragend: this._onDragEnd,
 						},
-						this
+						this,
 					),
 					this._draggable.on("predrag", this._onPreDragLimit, this),
 					t.options.worldCopyJump &&
@@ -24155,11 +24225,11 @@ lava
 					this._map
 						.latLngToContainerPoint(i.getSouthEast())
 						.multiplyBy(-1)
-						.add(this._map.getSize())
+						.add(this._map.getSize()),
 				)),
 					(this._viscosity = Math.min(
 						1,
-						Math.max(0, this._map.options.maxBoundsViscosity)
+						Math.max(0, this._map.options.maxBoundsViscosity),
 					));
 			} else this._offsetLimit = null;
 			t.fire("movestart").fire("dragstart"),
@@ -24265,7 +24335,7 @@ lava
 						blur: this._onBlur,
 						mousedown: this._onMouseDown,
 					},
-					this
+					this,
 				),
 				this._map.on({ focus: this._addHooks, blur: this._removeHooks }, this);
 		},
@@ -24278,7 +24348,7 @@ lava
 						blur: this._onBlur,
 						mousedown: this._onMouseDown,
 					},
-					this
+					this,
 				),
 				this._map.off({ focus: this._addHooks, blur: this._removeHooks }, this);
 		},
@@ -24411,7 +24481,7 @@ lava
 								this._onUp(),
 								this._simulateEvent("contextmenu", i));
 						}, this),
-						1e3
+						1e3,
 					)),
 					this._simulateEvent("mousedown", i),
 					mt(document, { touchmove: this._onMove, touchend: this._onUp }, this);
@@ -24463,7 +24533,7 @@ lava
 					!1,
 					!1,
 					0,
-					null
+					null,
 				),
 				i.target.dispatchEvent(e);
 		},
@@ -24493,7 +24563,7 @@ lava
 					(this._startLatLng = i.containerPointToLatLng(this._centerPoint)),
 					"center" !== i.options.touchZoom &&
 						(this._pinchStartLatLng = i.containerPointToLatLng(
-							e.add(n)._divideBy(2)
+							e.add(n)._divideBy(2),
 						)),
 					(this._startDist = e.distanceTo(n)),
 					(this._startZoom = i.getZoom()),
@@ -24525,7 +24595,7 @@ lava
 					if (1 === s && 0 === r.x && 0 === r.y) return;
 					this._center = i.unproject(
 						i.project(this._pinchStartLatLng, this._zoom).subtract(r),
-						this._zoom
+						this._zoom,
 					);
 				}
 				this._moved || (i._moveStart(!0, !1), (this._moved = !0)),
@@ -24548,11 +24618,11 @@ lava
 								this._center,
 								this._map._limitZoom(this._zoom),
 								!0,
-								this._map.options.zoomSnap
+								this._map.options.zoomSnap,
 						  )
 						: this._map._resetView(
 								this._center,
-								this._map._limitZoom(this._zoom)
+								this._map._limitZoom(this._zoom),
 						  ))
 				: (this._zooming = !1);
 		},
@@ -25100,7 +25170,7 @@ lava
 			var t,
 				a = this.length;
 			return new l(
-				a - 1 < e ? [] : e < 0 ? ((t = a + e) < 0 ? [] : [this[t]]) : [this[e]]
+				a - 1 < e ? [] : e < 0 ? ((t = a + e) < 0 ? [] : [this[t]]) : [this[e]],
 			);
 		},
 		append: function () {
@@ -25376,7 +25446,7 @@ lava
 						var e = i.style,
 							t =
 								"alignItems webkitAlignItems webkitBoxAlign msFlexAlign mozBoxAlign webkitFlexDirection msFlexDirection mozBoxDirection mozBoxOrient webkitBoxDirection webkitBoxOrient".split(
-									" "
+									" ",
 								),
 							a = 0;
 						a < t.length;
@@ -25433,7 +25503,7 @@ lava
 					for (var t = [], a = arguments.length; a--; ) t[a] = arguments[a];
 					s.apply(r, t), r.off(i, e);
 				},
-				e
+				e,
 			);
 		}),
 		(s.prototype.off = function (e, i) {
@@ -25632,7 +25702,7 @@ lava
 							z
 								.css(
 									"margin-" + (e.isHorizontal() ? "top" : "left"),
-									0 !== L && t.spaceBetween && t.spaceBetween + "px"
+									0 !== L && t.spaceBetween && t.spaceBetween + "px",
 								)
 								.attr("data-swiper-column", $)
 								.attr("data-swiper-row", L);
@@ -25869,11 +25939,11 @@ lava
 					" " +
 					i.slideDuplicateNextClass +
 					" " +
-					i.slideDuplicatePrevClass
+					i.slideDuplicatePrevClass,
 			),
 				(e = o
 					? t.$wrapperEl.find(
-							"." + i.slideClass + '[data-swiper-slide-index="' + r + '"]'
+							"." + i.slideClass + '[data-swiper-slide-index="' + r + '"]',
 					  )
 					: a.eq(r)).addClass(i.slideActiveClass),
 				i.loop &&
@@ -25886,7 +25956,7 @@ lava
 										i.slideDuplicateClass +
 										')[data-swiper-slide-index="' +
 										n +
-										'"]'
+										'"]',
 								)
 								.addClass(i.slideDuplicateActiveClass)
 						: s
@@ -25897,7 +25967,7 @@ lava
 										i.slideDuplicateClass +
 										'[data-swiper-slide-index="' +
 										n +
-										'"]'
+										'"]',
 								)
 								.addClass(i.slideDuplicateActiveClass));
 			var l = e
@@ -25920,7 +25990,7 @@ lava
 										i.slideDuplicateClass +
 										')[data-swiper-slide-index="' +
 										l.attr("data-swiper-slide-index") +
-										'"]'
+										'"]',
 								)
 								.addClass(i.slideDuplicateNextClass)
 						: s
@@ -25931,7 +26001,7 @@ lava
 										i.slideDuplicateClass +
 										'[data-swiper-slide-index="' +
 										l.attr("data-swiper-slide-index") +
-										'"]'
+										'"]',
 								)
 								.addClass(i.slideDuplicateNextClass),
 					d.hasClass(i.slideDuplicateClass)
@@ -25943,7 +26013,7 @@ lava
 										i.slideDuplicateClass +
 										')[data-swiper-slide-index="' +
 										d.attr("data-swiper-slide-index") +
-										'"]'
+										'"]',
 								)
 								.addClass(i.slideDuplicatePrevClass)
 						: s
@@ -25954,7 +26024,7 @@ lava
 										i.slideDuplicateClass +
 										'[data-swiper-slide-index="' +
 										d.attr("data-swiper-slide-index") +
-										'"]'
+										'"]',
 								)
 								.addClass(i.slideDuplicatePrevClass));
 		},
@@ -25988,7 +26058,7 @@ lava
 			) {
 				var u = parseInt(
 					a.slides.eq(p).attr("data-swiper-slide-index") || p,
-					10
+					10,
 				);
 				V.extend(a, {
 					snapIndex: t,
@@ -26016,7 +26086,7 @@ lava
 				t.virtual && t.params.virtual.enabled
 					? (t.clickedIndex = parseInt(
 							L(i).attr("data-swiper-slide-index"),
-							10
+							10,
 					  ))
 					: (t.clickedIndex = L(i).index()),
 				a.slideToClickedSlide &&
@@ -26168,11 +26238,11 @@ lava
 												e.target === this &&
 												(s.$wrapperEl[0].removeEventListener(
 													"transitionend",
-													s.onSlideToWrapperTransitionEnd
+													s.onSlideToWrapperTransitionEnd,
 												),
 												s.$wrapperEl[0].removeEventListener(
 													"webkitTransitionEnd",
-													s.onSlideToWrapperTransitionEnd
+													s.onSlideToWrapperTransitionEnd,
 												),
 												(s.onSlideToWrapperTransitionEnd = null),
 												delete s.onSlideToWrapperTransitionEnd,
@@ -26180,11 +26250,11 @@ lava
 										}),
 									s.$wrapperEl[0].addEventListener(
 										"transitionend",
-										s.onSlideToWrapperTransitionEnd
+										s.onSlideToWrapperTransitionEnd,
 									),
 									s.$wrapperEl[0].addEventListener(
 										"webkitTransitionEnd",
-										s.onSlideToWrapperTransitionEnd
+										s.onSlideToWrapperTransitionEnd,
 									)))
 							: (s.setTransition(0),
 							  s.setTranslate(v),
@@ -26292,7 +26362,7 @@ lava
 											e +
 											'"]:not(.' +
 											a.slideDuplicateClass +
-											")"
+											")",
 									)
 									.eq(0)
 									.index()),
@@ -26310,7 +26380,7 @@ lava
 										e +
 										'"]:not(.' +
 										a.slideDuplicateClass +
-										")"
+										")",
 								)
 								.eq(0)
 								.index()),
@@ -26333,7 +26403,7 @@ lava
 				if (a !== e.slidesPerGroup) {
 					for (var r = 0; r < a; r += 1) {
 						var n = L(f.createElement("div")).addClass(
-							e.slideClass + " " + e.slideBlankClass
+							e.slideClass + " " + e.slideBlankClass,
 						);
 						t.append(n);
 					}
@@ -26570,7 +26640,7 @@ lava
 			) {
 				var n = Math.min(
 					Math.max(e.translate, e.maxTranslate()),
-					e.minTranslate()
+					e.minTranslate(),
 				);
 				e.setTranslate(n),
 					e.updateActiveIndex(),
@@ -26616,7 +26686,7 @@ lava
 							L(r.target).closest(
 								i.noSwipingSelector
 									? i.noSwipingSelector
-									: "." + i.noSwipingClass
+									: "." + i.noSwipingClass,
 							)[0]
 						)
 							t.allowClick = !0;
@@ -26756,7 +26826,7 @@ lava
 												t.setTransition(0),
 												t.animating &&
 													t.$wrapperEl.trigger(
-														"webkitTransitionEnd transitionend"
+														"webkitTransitionEnd transitionend",
 													),
 												(a.allowMomentumBounce = !1),
 												!i.grabCursor ||
@@ -26784,7 +26854,7 @@ lava
 															1 +
 															Math.pow(
 																-t.minTranslate() + a.startTranslate + u,
-																v
+																v,
 															)))
 												: u < 0 &&
 												  a.currentTranslate < t.maxTranslate() &&
@@ -26795,7 +26865,7 @@ lava
 															1 -
 															Math.pow(
 																t.maxTranslate() - a.startTranslate - u,
-																v
+																v,
 															))),
 											h && (n.preventedByNestedSwiper = !0),
 											!t.allowSlideNext &&
@@ -27063,7 +27133,7 @@ lava
 						r.addEventListener(
 							a.move,
 							e.onTouchMove,
-							R.passiveListener ? { passive: !1, capture: n } : n
+							R.passiveListener ? { passive: !1, capture: n } : n,
 						),
 						r.addEventListener(a.end, e.onTouchEnd, o);
 				}
@@ -27083,7 +27153,7 @@ lava
 						? "resize orientationchange observerUpdate"
 						: "resize observerUpdate",
 					g,
-					!0
+					!0,
 				);
 		},
 		detachEvents: function () {
@@ -27120,7 +27190,7 @@ lava
 					m.ios || m.android
 						? "resize orientationchange observerUpdate"
 						: "resize observerUpdate",
-					g
+					g,
 				);
 		},
 	};
@@ -27187,7 +27257,7 @@ lava
 					w.indexOf("chrome") < 0 &&
 					w.indexOf("android") < 0),
 			isUiWebView: /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(
-				Y.navigator.userAgent
+				Y.navigator.userAgent,
 			),
 		};
 	var x = {
@@ -27360,7 +27430,7 @@ lava
 							i.srcset || i.getAttribute("srcset"),
 							i.sizes || i.getAttribute("sizes"),
 							!0,
-							t
+							t,
 						);
 					}
 				},
@@ -27579,12 +27649,12 @@ lava
 							? e.slideTo(
 									e.params.initialSlide + e.loopedSlides,
 									0,
-									e.params.runCallbacksOnInit
+									e.params.runCallbacksOnInit,
 							  )
 							: e.slideTo(
 									e.params.initialSlide,
 									0,
-									e.params.runCallbacksOnInit
+									e.params.runCallbacksOnInit,
 							  ),
 						e.attachEvents(),
 						(e.initialized = !0),
@@ -27617,7 +27687,7 @@ lava
 												i.slideActiveClass,
 												i.slideNextClass,
 												i.slidePrevClass,
-											].join(" ")
+											].join(" "),
 										)
 										.removeAttr("style")
 										.removeAttr("data-swiper-slide-index")
@@ -27680,14 +27750,14 @@ lava
 					Y.addEventListener("resize", this.resize.resizeHandler),
 						Y.addEventListener(
 							"orientationchange",
-							this.resize.orientationChangeHandler
+							this.resize.orientationChangeHandler,
 						);
 				},
 				destroy: function () {
 					Y.removeEventListener("resize", this.resize.resizeHandler),
 						Y.removeEventListener(
 							"orientationchange",
-							this.resize.orientationChangeHandler
+							this.resize.orientationChangeHandler,
 						);
 				},
 			},
@@ -27826,7 +27896,7 @@ lava
 										t.params.slideClass +
 										'[data-swiper-slide-index="' +
 										M +
-										'"]'
+										'"]',
 								)
 								.remove();
 				for (var k = 0; k < u.length; k += 1)
@@ -27859,7 +27929,7 @@ lava
 								t +
 								'">' +
 								e +
-								"</div>"
+								"</div>",
 					  );
 				return (
 					s.attr("data-swiper-slide-index") ||
@@ -28274,7 +28344,7 @@ lava
 					if (
 						(e.params.loop
 							? ((r = Math.ceil(
-									(e.activeIndex - e.loopedSlides) / e.params.slidesPerGroup
+									(e.activeIndex - e.loopedSlides) / e.params.slidesPerGroup,
 							  )) >
 									a - 1 - 2 * e.loopedSlides && (r -= a - 2 * e.loopedSlides),
 							  n - 1 < r && (r -= n),
@@ -28295,7 +28365,7 @@ lava
 									[e.isHorizontal() ? "outerWidth" : "outerHeight"](!0)),
 								i.css(
 									e.isHorizontal() ? "width" : "height",
-									e.pagination.bulletSize * (s.dynamicMainBullets + 4) + "px"
+									e.pagination.bulletSize * (s.dynamicMainBullets + 4) + "px",
 								),
 								1 < s.dynamicMainBullets &&
 									void 0 !== e.previousIndex &&
@@ -28322,7 +28392,7 @@ lava
 									s.bulletActiveClass +
 									"-prev-prev " +
 									s.bulletActiveClass +
-									"-main"
+									"-main",
 							),
 							1 < i.length)
 						)
@@ -28395,7 +28465,7 @@ lava
 							i
 								.find("." + s.progressbarFillClass)
 								.transform(
-									"translate3d(0,0,0) scaleX(" + w + ") scaleY(" + y + ")"
+									"translate3d(0,0,0) scaleX(" + w + ") scaleY(" + y + ")",
 								)
 								.transition(e.params.speed);
 					}
@@ -28427,7 +28497,7 @@ lava
 						for (
 							var r = e.params.loop
 									? Math.ceil(
-											(a - 2 * e.loopedSlides) / e.params.slidesPerGroup
+											(a - 2 * e.loopedSlides) / e.params.slidesPerGroup,
 									  )
 									: e.snapGrid.length,
 								n = 0;
@@ -28735,7 +28805,7 @@ lava
 					var r = s.find("." + e.params.scrollbar.dragClass);
 					0 === r.length &&
 						((r = L(
-							'<div class="' + e.params.scrollbar.dragClass + '"></div>'
+							'<div class="' + e.params.scrollbar.dragClass + '"></div>',
 						)),
 						s.append(r)),
 						V.extend(t, { $el: s, el: s[0], $dragEl: r, dragEl: r[0] }),
@@ -28776,7 +28846,7 @@ lava
 				else {
 					var c = l - (l - 1) * (1 - Math.abs(t));
 					i.transform(
-						"translate3d(" + n + ", " + o + ", 0px) scale(" + c + ")"
+						"translate3d(" + n + ", " + o + ", 0px) scale(" + c + ")",
 					);
 				}
 			},
@@ -28788,7 +28858,7 @@ lava
 					r = i.snapGrid;
 				e
 					.children(
-						"[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y]"
+						"[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y]",
 					)
 					.each(function (e, t) {
 						i.parallax.setTransform(t, s);
@@ -28801,7 +28871,7 @@ lava
 							(a = Math.min(Math.max(a, -1), 1)),
 							L(t)
 								.find(
-									"[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y]"
+									"[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y]",
 								)
 								.each(function (e, t) {
 									i.parallax.setTransform(t, a);
@@ -28812,7 +28882,7 @@ lava
 				void 0 === s && (s = this.params.speed);
 				this.$el
 					.find(
-						"[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y]"
+						"[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y]",
 					)
 					.each(function (e, t) {
 						var a = L(t),
@@ -29004,7 +29074,7 @@ lava
 							(r.prevPositionY = s.touchesCurrent.y),
 							(r.prevTime = Date.now()),
 							i.$imageWrapEl.transform(
-								"translate3d(" + s.currentX + "px, " + s.currentY + "px,0)"
+								"translate3d(" + s.currentX + "px, " + s.currentY + "px,0)",
 							);
 					}
 				}
@@ -29039,7 +29109,7 @@ lava
 						t.$imageWrapEl
 							.transition(p)
 							.transform(
-								"translate3d(" + a.currentX + "px, " + a.currentY + "px,0)"
+								"translate3d(" + a.currentX + "px, " + a.currentY + "px,0)",
 							);
 				}
 			},
@@ -29156,13 +29226,13 @@ lava
 								"gesturestart",
 								".swiper-slide",
 								t.onGestureStart,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.on(
 								"gesturechange",
 								".swiper-slide",
 								t.onGestureChange,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.on("gestureend", ".swiper-slide", t.onGestureEnd, a))
 						: "touchstart" === e.touchEvents.start &&
@@ -29170,24 +29240,24 @@ lava
 								e.touchEvents.start,
 								".swiper-slide",
 								t.onGestureStart,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.on(
 								e.touchEvents.move,
 								".swiper-slide",
 								t.onGestureChange,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.on(
 								e.touchEvents.end,
 								".swiper-slide",
 								t.onGestureEnd,
-								a
+								a,
 						  )),
 						e.$wrapperEl.on(
 							e.touchEvents.move,
 							"." + e.params.zoom.containerClass,
-							t.onTouchMove
+							t.onTouchMove,
 						);
 				}
 			},
@@ -29206,43 +29276,43 @@ lava
 								"gesturestart",
 								".swiper-slide",
 								t.onGestureStart,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.off(
 								"gesturechange",
 								".swiper-slide",
 								t.onGestureChange,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.off(
 								"gestureend",
 								".swiper-slide",
 								t.onGestureEnd,
-								a
+								a,
 						  ))
 						: "touchstart" === e.touchEvents.start &&
 						  (e.$wrapperEl.off(
 								e.touchEvents.start,
 								".swiper-slide",
 								t.onGestureStart,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.off(
 								e.touchEvents.move,
 								".swiper-slide",
 								t.onGestureChange,
-								a
+								a,
 						  ),
 						  e.$wrapperEl.off(
 								e.touchEvents.end,
 								".swiper-slide",
 								t.onGestureEnd,
-								a
+								a,
 						  )),
 						e.$wrapperEl.off(
 							e.touchEvents.move,
 							"." + e.params.zoom.containerClass,
-							t.onTouchMove
+							t.onTouchMove,
 						);
 				}
 			},
@@ -29260,7 +29330,7 @@ lava
 											d.params.slideClass +
 											'[data-swiper-slide-index="' +
 											e +
-											'"]'
+											'"]',
 								  )
 								: d.slides.eq(e),
 						t = c.find(
@@ -29270,7 +29340,7 @@ lava
 								p.loadedClass +
 								"):not(." +
 								p.loadingClass +
-								")"
+								")",
 						);
 					!c.hasClass(p.elementClass) ||
 						c.hasClass(p.loadedClass) ||
@@ -29305,7 +29375,7 @@ lava
 														e +
 														'"]:not(.' +
 														d.params.slideDuplicateClass +
-														")"
+														")",
 												);
 												d.lazy.loadInSlide(t.index(), !1);
 											} else {
@@ -29314,7 +29384,7 @@ lava
 														d.params.slideDuplicateClass +
 														'[data-swiper-slide-index="' +
 														e +
-														'"]'
+														'"]',
 												);
 												d.lazy.loadInSlide(a.index(), !1);
 											}
@@ -29339,7 +29409,7 @@ lava
 					if (r) {
 						if (
 							t.children(
-								"." + a.slideClass + '[data-swiper-slide-index="' + e + '"]'
+								"." + a.slideClass + '[data-swiper-slide-index="' + e + '"]',
 							).length
 						)
 							return !0;
@@ -29540,7 +29610,7 @@ lava
 							i.a11y.addElRole(a, "button"),
 							i.a11y.addElLabel(
 								a,
-								s.paginationBulletMessage.replace(/{{index}}/, a.index() + 1)
+								s.paginationBulletMessage.replace(/{{index}}/, a.index() + 1),
 							);
 					});
 			},
@@ -29569,7 +29639,7 @@ lava
 						e.pagination.$el.on(
 							"keydown",
 							"." + e.params.pagination.bulletClass,
-							e.a11y.onEnterKey
+							e.a11y.onEnterKey,
 						);
 			},
 			destroy: function () {
@@ -29590,7 +29660,7 @@ lava
 						a.pagination.$el.off(
 							"keydown",
 							"." + a.params.pagination.bulletClass,
-							a.a11y.onEnterKey
+							a.a11y.onEnterKey,
 						);
 			},
 		},
@@ -29621,7 +29691,7 @@ lava
 					this.history.scrollToSlide(
 						this.params.speed,
 						this.history.paths.value,
-						!1
+						!1,
 					);
 			},
 			getPathValues: function () {
@@ -29695,7 +29765,7 @@ lava
 						Y.history.replaceState(
 							null,
 							null,
-							"#" + e.slides.eq(e.activeIndex).attr("data-hash") || ""
+							"#" + e.slides.eq(e.activeIndex).attr("data-hash") || "",
 						);
 					else {
 						var t = e.slides.eq(e.activeIndex),
@@ -29795,11 +29865,11 @@ lava
 						0 !== e && t.params.autoplay.waitForTransition
 							? (t.$wrapperEl[0].addEventListener(
 									"transitionend",
-									t.autoplay.onTransitionEnd
+									t.autoplay.onTransitionEnd,
 							  ),
 							  t.$wrapperEl[0].addEventListener(
 									"webkitTransitionEnd",
-									t.autoplay.onTransitionEnd
+									t.autoplay.onTransitionEnd,
 							  ))
 							: ((t.autoplay.paused = !1), t.autoplay.run())));
 			},
@@ -29816,7 +29886,7 @@ lava
 						? Math.max(1 - Math.abs(i[0].progress), 0)
 						: 1 + Math.min(Math.max(i[0].progress, -1), 0);
 					i.css({ opacity: n }).transform(
-						"translate3d(" + s + "px, " + r + "px, 0px)"
+						"translate3d(" + s + "px, " + r + "px, 0px)",
 					);
 				}
 			},
@@ -29912,14 +29982,14 @@ lava
 							((E = L(
 								'<div class="swiper-slide-shadow-' +
 									(p ? "left" : "top") +
-									'"></div>'
+									'"></div>',
 							)),
 							v.append(E)),
 							0 === S.length &&
 								((S = L(
 									'<div class="swiper-slide-shadow-' +
 										(p ? "right" : "bottom") +
-										'"></div>'
+										'"></div>',
 								)),
 								v.append(S)),
 							E.length && (E[0].style.opacity = Math.max(-b, 0)),
@@ -29943,7 +30013,7 @@ lava
 								-r / 2 +
 								"px) rotateX(90deg) rotateZ(0deg) scale(" +
 								d.shadowScale +
-								")"
+								")",
 						);
 					else {
 						var C = Math.abs(u) - 90 * Math.floor(Math.abs(u) / 90),
@@ -29963,7 +30033,7 @@ lava
 								(n / 2 + P) +
 								"px, " +
 								-n / 2 / z +
-								"px) rotateX(-90deg)"
+								"px) rotateX(-90deg)",
 						);
 					}
 				var $ = I.isSafari || I.isUiWebView ? -l / 2 : 0;
@@ -29974,7 +30044,7 @@ lava
 						(t.isHorizontal() ? 0 : u) +
 						"deg) rotateY(" +
 						(t.isHorizontal() ? -u : 0) +
-						"deg)"
+						"deg)",
 				);
 			},
 			setTransition: function (e) {
@@ -29982,7 +30052,7 @@ lava
 				this.slides
 					.transition(e)
 					.find(
-						".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left"
+						".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left",
 					)
 					.transition(e),
 					this.params.cubeEffect.shadow &&
@@ -30022,14 +30092,14 @@ lava
 							((p = L(
 								'<div class="swiper-slide-shadow-' +
 									(e.isHorizontal() ? "left" : "top") +
-									'"></div>'
+									'"></div>',
 							)),
 							s.append(p)),
 							0 === c.length &&
 								((c = L(
 									'<div class="swiper-slide-shadow-' +
 										(e.isHorizontal() ? "right" : "bottom") +
-										'"></div>'
+										'"></div>',
 								)),
 								s.append(c)),
 							p.length && (p[0].style.opacity = Math.max(-r, 0)),
@@ -30044,7 +30114,7 @@ lava
 							o +
 							"deg) rotateY(" +
 							n +
-							"deg)"
+							"deg)",
 					);
 				}
 			},
@@ -30057,7 +30127,7 @@ lava
 					(t
 						.transition(e)
 						.find(
-							".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left"
+							".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left",
 						)
 						.transition(e),
 					a.params.virtualTranslate && 0 !== e)
@@ -30137,14 +30207,14 @@ lava
 							((E = L(
 								'<div class="swiper-slide-shadow-' +
 									(o ? "left" : "top") +
-									'"></div>'
+									'"></div>',
 							)),
 							v.append(E)),
 							0 === S.length &&
 								((S = L(
 									'<div class="swiper-slide-shadow-' +
 										(o ? "right" : "bottom") +
-										'"></div>'
+										'"></div>',
 								)),
 								v.append(S)),
 							E.length && (E[0].style.opacity = 0 < m ? m : 0),
@@ -30158,7 +30228,7 @@ lava
 				this.slides
 					.transition(e)
 					.find(
-						".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left"
+						".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left",
 					)
 					.transition(e);
 			},
@@ -30184,7 +30254,7 @@ lava
 								watchSlidesVisibility: !0,
 								watchSlidesProgress: !0,
 								slideToClickedSlide: !1,
-							})
+							}),
 					  )),
 					  (e.thumbs.swiperCreated = !0)),
 					e.thumbs.swiper.$el.addClass(e.params.thumbs.thumbsContainerClass),
@@ -30201,7 +30271,7 @@ lava
 							((i = t.params.loop
 								? parseInt(
 										L(t.clickedSlide).attr("data-swiper-slide-index"),
-										10
+										10,
 								  )
 								: a),
 							e.params.loop)
@@ -30276,7 +30346,7 @@ lava
 						for (var p = 0; p < l; p += 1)
 							a.$wrapperEl
 								.children(
-									'[data-swiper-slide-index="' + (t.realIndex + p) + '"]'
+									'[data-swiper-slide-index="' + (t.realIndex + p) + '"]',
 								)
 								.addClass(d);
 					else
@@ -30750,7 +30820,7 @@ lava
 							liveRegion: L(
 								'<span class="' +
 									t.params.a11y.notificationClass +
-									'" aria-live="assertive" aria-atomic="true"></span>'
+									'" aria-live="assertive" aria-atomic="true"></span>',
 							),
 						},
 					}),
@@ -30803,7 +30873,7 @@ lava
 						this.history.initialized &&
 							this.history.setHistory(
 								this.params.history.key,
-								this.activeIndex
+								this.activeIndex,
 							);
 					},
 				},
@@ -30866,11 +30936,11 @@ lava
 									e.target === this &&
 									(t.$wrapperEl[0].removeEventListener(
 										"transitionend",
-										t.autoplay.onTransitionEnd
+										t.autoplay.onTransitionEnd,
 									),
 									t.$wrapperEl[0].removeEventListener(
 										"webkitTransitionEnd",
-										t.autoplay.onTransitionEnd
+										t.autoplay.onTransitionEnd,
 									),
 									(t.autoplay.paused = !1),
 									t.autoplay.running ? t.autoplay.run() : t.autoplay.stop());

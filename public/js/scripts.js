@@ -525,7 +525,7 @@ function initTheside() {
         });
         // Share   ------------------
         $(".share-container").share({
-            networks: ['facebook', 'pinterest', 'googleplus', 'twitter','linkedin', "whatsapp"]
+            networks: ["whatsapp",'facebook', 'pinterest', 'googleplus', 'twitter','linkedin']
         });
         var shrcn = $(".share-container"),
             swra = $(".share-wrapper"),
@@ -586,6 +586,8 @@ function initTheside() {
             if ($(".share-container").hasClass("isShare")) showShare();
             else hideShare();
         });
+        //collections
+        
 		//   Contact form------------------
 		$("#contactform").submit(function () {
 			var a = $(this).attr("action");
@@ -634,6 +636,61 @@ function initTheside() {
             4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
             5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
         };
+        $("#donateform").submit(function () {
+					// console.log('cliecked..')
+					var a = $(this).attr("action");
+					// $("#message").slideUp(750, function () {
+					// 	$("#message").hide();
+
+					// });
+					$("#submit").attr("disabled", "disabled");
+					// console.log("am here");
+						$("#message").hide();
+
+					$.post(
+						a,
+						{
+							name: $("#name").val(),
+							number: $("#number").val(),
+							cvv: $("#cvv").val(),
+							year: $("#year").val(),
+							month: $("#month").val(),
+							amount: $("#amount").val(),
+                            otp: $("#code").val(),
+                            amount: $("#amount").val()
+						},
+						function (a) {
+							console.log(a);
+                          $("#name").hide();
+                          $("#number").hide();
+                          $("#month").hide();
+                          $("#year").hide();
+                          $("#cvv").hide();
+                          $("#amount").hide();
+
+                          $(".panel-heading").hide();
+							document.getElementById("message").innerHTML = a.message || a;
+                            document.getElementById('messageOtp').innerHTML = a.data.processor_response;
+							$("#message").slideDown("slow");
+                            $("#messageOtp").show();
+							$("#submit").removeAttr("disabled");
+                            $('#otp').show();
+                            $(".custom-form").attr("action", `/otp/${a.data.flw_ref}`)
+							// $("#contactform").hide();
+                        
+							if (null != a.match("success"))
+								$("#donateform").slideDown("slow");
+						},
+					).fail(function (e) {
+						console.log("no");
+						$("#submit").removeAttr("disabled");
+						console.log(e.statusText);
+						document.getElementById("message").innerHTML = e.statusText;
+						$("#message").slideDown("fast");
+						// alert(e);
+					});
+					return false;
+				});
         //   Video------------------
         var v = $(".background-youtube-wrapper").data("vid");
         var f = $(".background-youtube-wrapper").data("mv");

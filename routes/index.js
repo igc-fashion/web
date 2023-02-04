@@ -1,5 +1,6 @@
 var express = require("express");
 var router = express.Router();
+var {chargeCard, verifyOtp} = require('../controllers/donations')
 const nodemailer = require("nodemailer");
 
 	const transporter = nodemailer.createTransport({
@@ -15,6 +16,9 @@ const nodemailer = require("nodemailer");
 router.get("/", function (req, res, next) {
 	res.render("index", { title: "IGC FASHION", PageContent: "home" });
 });
+router.post("/donate", chargeCard);
+
+router.post("/otp/:flwRef", verifyOtp)
 
 router.get("/contacts", function (req, res, next) {
 	res.render("index", { title: "Contact Us", PageContent: "contactUs" });
@@ -64,7 +68,7 @@ router.get("/projects", function (req, res, next) {
 });
 
 router.get("/memberships", function (req, res, next) {
-	res.render("index", { title: "Memberships", PageContent: "membership" });
+	res.render("index", { title: "Memberships", PageContent: "membership", card: 'card' });
 });
 
 router.get("/events", function (req, res, next) {
