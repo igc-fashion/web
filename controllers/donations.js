@@ -41,15 +41,17 @@ exports.chargeCard = function ({ body }, res, next) {
 	};
 
 	const cardPayment = async () => {
-		try {
-			const response = await flw.Charge.card(details);
 
-			res.json(response);
-			console.log(response, "flutter wave init payment response");
-			console.log(response.meta.authorization.fields, "fields");
-		} catch (error) {
-			console.log(error.message, "flutter error");
-		}
+		const response = await flw.Charge.card(details);
+		
+		if(response.status !== "error"){
+	res.json(response);
+	console.log(response, "flutter wave init payment response");
+		console.log(response.meta.authorization.fields, "fields");
+
+		} else console.log(response)
+	
+		
 	};
 
 	cardPayment();

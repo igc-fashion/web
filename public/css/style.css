@@ -255,6 +255,7 @@ blockquote p {
   float: left;
   width: 100%;
   position: relative;
+  /* background-color: #000; */
 }
 .content {
   float: left;
@@ -302,11 +303,16 @@ blockquote p {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-size: cover;
+  /* background-size: cover;
   background-attachment: scroll;
   background-position: center;
   background-repeat: repeat;
-  background-origin: content-box;
+  background-origin: content-box; */
+   background-repeat:no-repeat;
+    background-position: center;
+    /* background-image:url(image.jpg); */
+    background-size: cover;
+  
 }
 .bgimg{
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("pics/DSC00440");
@@ -983,6 +989,21 @@ nav.nav-inner {
   position: relative;
 }
 /*------ home------------------------------------------------*/
+.home-title h3 {
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f76905;;
+  font-weight: 900;
+  /* float: left; */
+  width: 100%;
+  letter-spacing: 2px;
+  /* padding-bottom: 10px; */
+  line-height: 34px;
+  font-family: "Oswald", sans-serif;
+  padding-top: 10px;
+  
+}
 .ms_title-wrap {
   position: absolute;
   z-index: 20;
@@ -1990,6 +2011,7 @@ section.parallax-section {
 }
 section.small-padding.article {
   /* padding: 40px 0; */
+  background: #000;
   padding: 0px 0;
 }
 .no-padding-bottom {
@@ -2010,7 +2032,7 @@ section.small-padding.article {
 section.parallax-section .bg,
 .hero-bg .bg,
 .split-sceen-media .bg {
-  height: 120%;
+  height: 150%;
   top: 0;
 }
 section.hero-section {
@@ -2018,7 +2040,7 @@ section.hero-section {
   overflow: hidden;
 }
 section.hero-section:before {
-  content: "";
+  /* content: "this is test"; */
   position: absolute;
   left: 0;
   width: 30%;
@@ -2047,10 +2069,13 @@ section.hero-section .fs-canvas {
 
   top: 0;
   bottom: 70px;
-  right: 70px;
-  left: 30%;
+  /* right: 70px;
+  left: 30%; */
+  right: 0;
+left: 0;
   overflow: hidden;
   z-index: 2;
+  
 }
 .hero-bg-dec {
   position: absolute;
@@ -2262,10 +2287,10 @@ section.hero-section .fs-canvas {
 .split-sceen-content.dark-bg .split-sceen-content_title p {
   color: rgba(255, 255, 255, 0.41);
 }
-.split-sceen-content_title {
+/* .split-sceen-content_title {
   margin-bottom: 20px;
   padding-top: 20px;
-}
+} */
 .split-sceen-content_title:before {
   /* content: ""; */
   position: absolute;
@@ -2278,14 +2303,17 @@ section.hero-section .fs-canvas {
   font-size: 26px;
   text-align: left;
   text-transform: uppercase;
-  color: #000;
-  font-weight: 800;
+  color: #f76905;;
+  font-weight: 900;
   float: left;
   width: 100%;
   letter-spacing: 2px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   line-height: 34px;
+  font-family: "Oswald", sans-serif;
+  
 }
+
 .split-sceen-content_title_center h3 {
   font-size: 26px;
   text-align: center;
@@ -2937,7 +2965,8 @@ section.hero-section .fs-canvas {
   float: left;
   width: 100%;
   padding: 30px 45px;
-  margin-top: 40px;
+  margin-top:10px;
+  outline: 1px dotted #f76905;;
 }
 .pr-list li {
   float: left;
@@ -3585,7 +3614,8 @@ section.hero-section .fs-canvas {
   line-height: 90px;
 }
 .footer-inner {
-  padding: 120px 0 170px;
+  /* padding: 120px 0 170px; */
+  padding: 2px;
 }
 .footer-logo {
   float: left;
@@ -4940,10 +4970,10 @@ section.hero-section .fs-canvas {
     z-index: 50;
     background: #000;
   }
-  .hero-bg {
+  /* .hero-bg {
     right: 0;
     left: 0;
-  }
+  } */
   section.hero-section:before {
     background: #323236;
   }

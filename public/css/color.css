@@ -22,7 +22,8 @@
 .grid-det_link:before,
 .scroller,
 .hero-start-link:after,
-.hero-section .section-title h2:before,
+.hero-section .section-title 
+/* h2:before, */
 /* .hero-bg:before, */
 .team-social:before,
 .inline-facts-wrap h6:before,
@@ -38,7 +39,8 @@
 .pagination a.current-page,
 .serv-text:before,
 .order-wrap h4:before,
-.hero-title .section-title h2:before,
+.hero-title .section-title 
+/* h2:before, */
 .nav-button-wrap:before,
 .folio-counter div.all-album:before,
 .inline-filter-panel .gallery-filters a.gallery-filter-active:after,

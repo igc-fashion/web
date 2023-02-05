@@ -63,6 +63,20 @@ router.get("/collections", function (req, res, next) {
 	res.render("index", { title: "Collections", PageContent: "collections" });
 });
 
+router.get("/aw19", function (req, res, next) {
+	res.render("index", { title: "AW19", PageContent: "aw19" });
+});
+
+
+router.get("/kampaladisasters", function (req, res, next) {
+	res.render("index", { title: "KLA D", PageContent: "kampaladisasters" });
+});
+
+router.get("/munsiko", function (req, res, next) {
+	res.render("index", { title: "Munsiko", PageContent: "munsiko" });
+});
+
+
 router.get("/projects", function (req, res, next) {
 	res.render("index", { title: "Projects", PageContent: "projects" });
 });
@@ -95,5 +109,8 @@ router.get("/mistakenfabrics", function (req, res, next) {
 	res.render("index", { title: "collections", PageContent: "mistakenfabrics" });
 });
 
+router.get("/mistakenfabricscollection", function (req, res, next) {
+	res.render("index", { title: "collections", PageContent: "mistakenfabricscollection" });
+});
 
 module.exports = router;
