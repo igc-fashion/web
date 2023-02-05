@@ -9826,9 +9826,9 @@ body:not(.lg-from-hash)
   }
 }
 
-@media only screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
 
 	  .carousel-inner{
 	height: 250px;
   }
-}
+} */
