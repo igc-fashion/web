@@ -2050,7 +2050,7 @@ section.hero-section:before {
   z-index: 3;
 }
 section.hero-section:after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   right: 0;
   width: 30%;

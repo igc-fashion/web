@@ -9598,6 +9598,7 @@ body:not(.lg-from-hash)
   position: relative;
   width: 100%;
   overflow: hidden;
+  /* height: 450px; */
 }
 .carousel-inner > .item {
   position: relative;
@@ -9812,5 +9813,22 @@ body:not(.lg-from-hash)
   }
   .carousel-indicators {
     bottom: 20px;
+  }
+  .carousel-inner{
+	height: 450px;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+ 
+  .carousel-inner{
+	height: 310px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+	  .carousel-inner{
+	height: 250px;
   }
 }
