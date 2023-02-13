@@ -5656,9 +5656,11 @@ jQuery.extend(jQuery.easing, {
 						url: "https://twitter.com/intent/tweet?url=|u|",
 					},
 					linkedin: {
-						url: "http://www.linkedin.com/shareArticle?mini=true&url=|u|&title=|t|",
+						url: "http://www.linkedin.com/shareArticle?mini=true&url=|u|&title=|t|&summary=|d|&source=in1.com",
 					},
-					
+					googleplus: {
+						url: "https://plusone.google.com/_/+1/confirm?hl=en&url=|u|",
+					},
 					pinterest: {
 						url: "http://pinterest.com/pin/create/button/?url=|u|&media=&description=|d|",
 					},
