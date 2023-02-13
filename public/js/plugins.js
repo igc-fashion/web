@@ -5609,7 +5609,7 @@ jQuery.extend(jQuery.easing, {
 										.replace("|d|", g)
 										.replace("|140|", f.substring(0, 130))),
 									t(
-										"<a href='" +
+										"<br/><a href='" +
 											s +
 											"'   class='pop share-" +
 											o +
@@ -5653,28 +5653,19 @@ jQuery.extend(jQuery.easing, {
 				networkDefs: {
 					facebook: { url: "http://www.facebook.com/share.php?u=|u|" },
 					twitter: {
-						url: "https://twitter.com/intent/tweet?url=https://igcfashion.co",
+						url: "https://twitter.com/intent/tweet?url=|u|",
 					},
 					linkedin: {
-						url: "http://www.linkedin.com/shareArticle?mini=true&url=|u|&title=|t|&summary=|d|&source=in1.com",
+						url: "http://www.linkedin.com/shareArticle?mini=true&url=|u|&title=|t|",
 					},
-					in1: { url: "http://www.in1.com/cast?u=|u|", w: "490", h: "529" },
-					tumblr: { url: "http://www.tumblr.com/share?v=3&u=|u|" },
-					digg: { url: "http://digg.com/submit?url=|u|&title=|t|" },
-					googleplus: {
-						url: "https://plusone.google.com/_/+1/confirm?hl=en&url=|u|",
-					},
-					reddit: { url: "http://reddit.com/submit?url=|u|" },
+					
 					pinterest: {
 						url: "http://pinterest.com/pin/create/button/?url=|u|&media=&description=|d|",
 					},
-					posterous: { url: "http://posterous.com/share?linkto=|u|&title=|t|" },
-					stumbleupon: {
-						url: "http://www.stumbleupon.com/submit?url=|u|&title=|t|",
-					},
+					
 					email: { url: "mailto:?subject=|t|" },
 					whatsapp: {
-						url: "https://api.whatsapp.com/send?text=https://igcfashion.co",
+						url: "https://api.whatsapp.com/send?text=|u|",
 					},
 				},
 			};
@@ -5685,7 +5676,7 @@ jQuery.extend(jQuery.easing, {
 			: r.init.apply(this, arguments);
 	}),
 		(t.fn.share.defaults = {
-			networks: ["in1", "facebook", "twitter", "linkedin", "whatsapp"],
+			networks: [ "facebook", "twitter", "linkedin", "whatsapp"],
 			theme: "icon",
 			autoShow: !0,
 			margin: "3px",
