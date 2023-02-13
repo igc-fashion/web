@@ -1013,6 +1013,22 @@ nav.nav-inner {
   padding-top: 10px;
   
 }
+
+.sub-title {
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f76905;;
+  font-weight: 900;
+  /* float: left; */
+  width: 100%;
+  letter-spacing: 2px;
+  /* padding-bottom: 10px; */
+  line-height: 34px;
+  font-family: "Oswald", sans-serif;
+  /* padding-top: 10px; */
+  
+}
 .ms_title-wrap {
   position: absolute;
   z-index: 20;
